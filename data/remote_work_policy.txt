@@ -1,0 +1,35 @@
+NEXUS CORP - REMOTE WORK POLICY
+Effective Date: March 15, 2026
+Version 2.1
+
+1. POLICY STATEMENT
+Nexus Corp embraces flexible work arrangements as a core component of its talent strategy. This Remote Work Policy defines eligibility, expectations, and requirements for employees who work from locations other than company offices. The policy balances operational needs with employee autonomy and ensures consistent collaboration, security, and productivity across distributed teams.
+
+2. ELIGIBILITY
+Remote work is available to employees in roles rated as "Remote-Eligible" by their department head and HR. Eligibility criteria include job function, performance history, security requirements, and team distribution. New employees must complete a 90-day onboarding period in-office before requesting remote status. Employees with documented performance concerns may be required to return to office for a 30-day observation period.
+
+3. HYBRID MODEL
+Nexus Corp operates on a flexible hybrid model. Employees may choose their office attendance days based on team needs and personal preference, subject to the following minimums: at least one in-office day per week for collaboration-heavy teams; at least two in-office days per quarter for teams with significant in-person client interaction. Managers may adjust these minimums based on project requirements.
+
+4. HOME OFFICE REQUIREMENTS
+Remote employees must maintain a dedicated workspace that is professional, quiet, and free from distractions. The workspace must include: a stable internet connection with minimum 100 Mbps download and 20 Mbps upload; an ergonomic chair and desk setup; adequate lighting for video calls; and a private area for sensitive conversations. Nexus Corp provides a one-time home office stipend of $1,500 for equipment and $500 annually for coworking space memberships.
+
+5. TECHNOLOGY AND SECURITY
+Remote employees receive the same equipment as on-site employees, including laptops, monitors, headsets, and peripherals. All corporate data must be accessed through the company VPN with multi-factor authentication enabled. Personal networks must use WPA3 encryption. Employees must not access corporate systems over public Wi-Fi without VPN protection. Screen locks must activate after 5 minutes of inactivity. Remote access is monitored and logged for security compliance.
+
+6. COMMUNICATION AND AVAILABILITY
+Remote employees must maintain digital presence equivalent to in-office colleagues. Core collaboration hours are 10:00 AM to 3:00 PM in the employee's primary time zone. During these hours, employees must respond to Slack messages within 30 minutes and emails within 2 hours. Calendar availability must be kept current. Employees must test audio and video before meetings. Cameras should be on for internal meetings unless bandwidth constraints prevent it.
+
+7. MEETINGS AND COLLABORATION
+All-hands meetings, sprint planning sessions, and critical decision meetings are held with hybrid participation. Remote employees must have their video on for the first 10 minutes of meetings to establish presence. Meeting organizers must ensure remote participants can contribute equally. Brainstorming sessions use digital whiteboards (Miro or FigJam). Meeting notes are shared within 24 hours. Time zone differences must be respected when scheduling.
+
+8. PERFORMANCE AND ACCOUNTABILITY
+Remote work performance is measured by outcomes, not hours worked. Quarterly check-ins between managers and remote employees review productivity, collaboration quality, and well-being. Time tracking is not required for exempt employees but may be implemented for project-based work. Deliverables must meet the same quality standards as in-office work. Employees who consistently miss deadlines or communication obligations may lose remote eligibility.
+
+9. WELL-BEING AND BOUNDARIES
+Remote employees are encouraged to maintain clear work-life boundaries. The company respects quiet hours and does not expect responses outside core hours except for critical escalations. Employees should take regular breaks using the Pomodoro technique recommended by HR. Mental health resources are available through the employee assistance program. Quarterly virtual team-building events foster connection. Employees experiencing isolation or burnout should contact their manager or HR.
+
+10. POLICY UPDATES AND COMPLIANCE
+This policy is reviewed annually and updated as needed. Employees will receive 30 days notice of material changes. Compliance is monitored through quarterly self-assessments and manager audits. Violations may result in revocation of remote work privileges, disciplinary action, or termination. Exceptions require written approval from the VP of Human Resources and the employee's direct manager.
+
+Questions regarding this policy should be directed to the HR Operations team at hr-ops@nexuscorp.example or through the #hr-help Slack channel.

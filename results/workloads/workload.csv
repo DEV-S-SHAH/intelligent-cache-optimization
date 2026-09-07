@@ -1,0 +1,101 @@
+id,type,text,base,complexity
+48,weak_semantic,Best practices for what is the pythagorean theorem?,What is the Pythagorean theorem?,normal
+60,hot,Explain DNS resolution,Explain DNS resolution,complex
+79,unique,What is the speed of light? - sehzpotbpnweyceprg,What is the speed of light?,normal
+31,strong_semantic,I need information on natural language processing,What is natural language processing?,normal
+15,exact_repeat,What is climate change?,What is climate change?,normal
+52,weak_semantic,Best practices for what is the speed of light?,What is the speed of light?,normal
+38,strong_semantic,What can you tell me about memory management work?,How does memory management work?,normal
+70,unique,What is the speed of light? - gpxkfzncbcqukbjz,What is the speed of light?,normal
+50,weak_semantic,History of explain transaction isolation levels,Explain transaction isolation levels,simple
+1,exact_repeat,What is database normalization?,What is database normalization?,normal
+2,exact_repeat,Explain recurrent neural networks,Explain recurrent neural networks,complex
+73,unique,What is an operating system? - bwycmbttdmo,What is an operating system?,normal
+36,strong_semantic,Give me a summary of computer vision,What is computer vision?,normal
+87,cold,thanks,thanks,simple
+64,hot,What is a firewall?,What is a firewall?,normal
+16,exact_repeat,What is TCP/IP?,What is TCP/IP?,normal
+62,hot,How does backpropagation work?,How does backpropagation work?,normal
+69,hot,How does backpropagation work?,How does backpropagation work?,normal
+10,exact_repeat,What is reinforcement learning?,What is reinforcement learning?,normal
+30,strong_semantic,Please describe convolutional neural network work,How does convolutional neural network work?,normal
+98,dynamic_stale,Explain DNS resolution (as of 2021),Explain DNS resolution,complex
+75,unique,Explain DNS resolution - bqfxwbgr,Explain DNS resolution,complex
+6,exact_repeat,How does convolutional neural network work?,How does convolutional neural network work?,normal
+45,weak_semantic,Common issues with explain transaction isolation levels,Explain transaction isolation levels,complex
+97,dynamic_stale,What is reinforcement learning? (as of 2023),What is reinforcement learning?,normal
+63,hot,What is a firewall?,What is a firewall?,normal
+17,exact_repeat,What is TCP/IP?,What is TCP/IP?,normal
+61,hot,What is CDN?,What is CDN?,normal
+9,exact_repeat,Explain Big O notation,Explain Big O notation,complex
+37,strong_semantic,What can you tell me about latency?,What is latency?,normal
+41,strong_semantic,Can you explain latency?,What is latency?,normal
+11,exact_repeat,What is reinforcement learning?,What is reinforcement learning?,normal
+67,hot,What is CDN?,What is CDN?,normal
+72,unique,What is VPN? - tncqvnfjeyxxpmcj,What is VPN?,normal
+53,weak_semantic,Difference between what is virtual memory? and alternatives,What is virtual memory?,normal
+90,cold,hi,hi,simple
+89,cold,got it,got it,simple
+18,exact_repeat,What is HTTP?,What is HTTP?,normal
+25,strong_semantic,What is cdn?,What is CDN?,normal
+57,hot,What is CDN?,What is CDN?,normal
+26,strong_semantic,Please describe transaction isolation levels,Explain transaction isolation levels,complex
+58,hot,What is transfer learning?,What is transfer learning?,normal
+66,hot,How does backpropagation work?,How does backpropagation work?,normal
+19,exact_repeat,What is HTTP?,What is HTTP?,normal
+7,exact_repeat,How does convolutional neural network work?,How does convolutional neural network work?,normal
+95,dynamic_stale,How does routing work? (as of 2021),How does routing work?,normal
+20,strong_semantic,What can you tell me about serverless computing?,Explain serverless computing,complex
+99,dynamic_stale,Explain version control (as of 2022),Explain version control,complex
+21,strong_semantic,Give me a summary of backpropagation work,How does backpropagation work?,normal
+54,weak_semantic,Difference between what is http? and alternatives,What is HTTP?,normal
+76,unique,What is TCP/IP? - dyomuuecllmsrzck,What is TCP/IP?,normal
+27,strong_semantic,What do you know about a system call?,What is a system call?,normal
+23,strong_semantic,How does functional programming work?,What is functional programming?,normal
+12,exact_repeat,How does backpropagation work?,How does backpropagation work?,normal
+83,unique,Explain serverless computing - gxbqvbidzelsocy,Explain serverless computing,complex
+56,hot,What is a firewall?,What is a firewall?,normal
+47,weak_semantic,Difference between how does routing work? and alternatives,How does routing work?,normal
+46,weak_semantic,Best practices for what is multithreading?,What is multithreading?,normal
+43,strong_semantic,What do you know about interrupt handling?,Explain interrupt handling,complex
+34,strong_semantic,Give me a summary of version control,Explain version control,complex
+85,cold,ok,ok,simple
+59,hot,How does backpropagation work?,How does backpropagation work?,normal
+77,unique,What is a system call? - wgelkhgylwobzvzywemf,What is a system call?,normal
+0,exact_repeat,What is database normalization?,What is database normalization?,normal
+71,unique,What is cloud storage? - zwasrngqclly,What is cloud storage?,normal
+5,exact_repeat,What is the capital of France?,What is the capital of France?,normal
+32,strong_semantic,What can you tell me about deadlock?,Explain deadlock,complex
+94,cold,good morning,good morning,simple
+49,weak_semantic,Best practices for explain load balancer in cloud,Explain load balancer in cloud,complex
+81,unique,How does the water cycle work? - bfgywwjev,How does the water cycle work?,normal
+86,cold,good morning,good morning,simple
+78,unique,What is a data structure? - eakyuhss,What is a data structure?,normal
+40,strong_semantic,How does gradient descent work?,Explain gradient descent,complex
+88,cold,thanks,thanks,simple
+55,hot,What is CDN?,What is CDN?,normal
+13,exact_repeat,How does backpropagation work?,How does backpropagation work?,normal
+4,exact_repeat,What is the capital of France?,What is the capital of France?,normal
+80,unique,What is a relational database? - gpqkpnyfsgkrhitbl,What is a relational database?,normal
+74,unique,What is VPN? - wlfosfizqlndfipf,What is VPN?,normal
+22,strong_semantic,Give me a summary of database replication,What is database replication?,normal
+33,strong_semantic,What is vpn?,What is VPN?,normal
+14,exact_repeat,What is climate change?,What is climate change?,normal
+96,dynamic_stale,Explain recurrent neural networks (as of 2023),Explain recurrent neural networks,complex
+92,cold,no,no,simple
+68,hot,How does backpropagation work?,How does backpropagation work?,normal
+93,cold,got it,got it,simple
+65,hot,What is a firewall?,What is a firewall?,normal
+82,unique,How does packet switching work? - zunroycwgxtehfirw,How does packet switching work?,simple
+44,strong_semantic,I need information on version control,Explain version control,complex
+91,cold,thanks,thanks,simple
+8,exact_repeat,Explain Big O notation,Explain Big O notation,complex
+35,strong_semantic,Please describe a relational database,What is a relational database?,normal
+42,strong_semantic,Can you explain http?,What is HTTP?,normal
+51,weak_semantic,Common issues with explain interrupt handling,Explain interrupt handling,complex
+24,strong_semantic,What can you tell me about debugging?,What is debugging?,normal
+84,unique,What is ACID compliance? - ajolbjyzbjrrjowz,What is ACID compliance?,normal
+3,exact_repeat,Explain recurrent neural networks,Explain recurrent neural networks,complex
+28,strong_semantic,How does acid compliance work?,What is ACID compliance?,normal
+29,strong_semantic,Can you explain a system call?,What is a system call?,normal
+39,strong_semantic,Can you explain cap theorem?,Explain CAP theorem,complex

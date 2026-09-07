@@ -1,0 +1,43 @@
+NEXUS CORP - INFORMATION SECURITY POLICY
+Effective Date: February 1, 2026
+Version 4.0
+
+1. OBJECTIVE
+This Information Security Policy establishes the framework for protecting Nexus Corp's digital assets, customer data, intellectual property, and employee information. It defines roles, responsibilities, and controls required to maintain confidentiality, integrity, and availability of information systems. All employees, contractors, and third-party vendors with system access must comply with this policy.
+
+2. DATA CLASSIFICATION
+Nexus Corp classifies data into four tiers:
+- Public: Information intended for external distribution, such as marketing materials.
+- Internal: Operational data for employee use, including internal wikis and non-sensitive reports.
+- Confidential: Sensitive business data including customer records, financial projections, and strategic plans.
+- Restricted: Highly sensitive data such as source code, encryption keys, merger discussions, and personal health information.
+Each classification requires specific handling, storage, and transmission controls.
+
+3. ACCESS CONTROL
+Access to systems follows the principle of least privilege. Employees receive role-based access through the identity and access management (IAM) platform. Multi-factor authentication (MFA) is mandatory for all remote access and privileged accounts. Default passwords are not permitted. Access reviews occur quarterly. Privileged accounts require additional approval and are logged for audit. Terminated employees lose all system access within 24 hours.
+
+4. PASSWORD REQUIREMENTS
+Passwords must be at least 14 characters long and contain a mix of uppercase, lowercase, numbers, and symbols. Passphrases are encouraged. Passwords cannot contain usernames, company names, or dictionary words. Password reuse across systems is prohibited. Passwords must be changed every 90 days. Password managers such as 1Password or Bitwarden are provided and required. Sharing passwords is strictly prohibited and will result in disciplinary action.
+
+5. NETWORK SECURITY
+All corporate networks use firewall segmentation, intrusion detection systems, and encrypted VPN tunnels. Remote access is exclusively through the corporate VPN with certificate-based authentication. Guest networks are isolated from internal resources. Network traffic is monitored for anomalies. Bring-your-own-device (BYOD) devices must meet minimum security standards including full-disk encryption, antivirus, and remote wipe capability before connecting to corporate resources.
+
+6. ENDPOINT PROTECTION
+All company-issued devices must run approved antivirus and endpoint detection and response (EDR) software. Operating systems and applications must receive security patches within 14 days of release. Local administrator privileges are disabled by default. USB storage devices are blocked unless explicitly whitelisted by IT security. Devices must support remote wipe and location tracking. Lost or stolen devices must be reported immediately.
+
+7. INCIDENT RESPONSE
+Security incidents must be reported to the Security Operations Center (SOC) within one hour of discovery via the incident response portal or by calling +1-800-SEC-HELP. The SOC classifies incidents by severity and coordinates response. Employees must not attempt to remediate incidents independently. Evidence must be preserved. Post-incident reviews occur within five business days. Repeat incidents trigger process improvement initiatives.
+
+8. DATA PROTECTION AND PRIVACY
+Customer personally identifiable information (PII) is encrypted at rest and in transit. Data retention follows the legal hold and records management policy. Employees may not export sensitive data to personal devices or unauthorized cloud services. The privacy team oversees compliance with GDPR, CCPA, and other applicable regulations. Data breach notifications follow the 72-hour regulatory requirement. Annual privacy training is mandatory for all employees handling PII.
+
+9. THREAT AWARENESS
+Phishing simulations are conducted quarterly. Employees must complete annual security awareness training. Social engineering, pretexting, and baiting attempts must be reported. Suspicious emails should be forwarded to phishing@nexuscorp.example. Passwords must never be entered on unverified sites. Physical security requires badge access to all floors and visitor escort policies. Tailgating is prohibited.
+
+10. CLOUD SECURITY
+Cloud services must be provisioned through the approved cloud governance platform. Unauthorized SaaS subscriptions are prohibited. Cloud resources must be tagged for ownership and cost allocation. Encryption keys are managed through the central key management service. Cloud misconfigurations are detected automatically. Third-party cloud providers undergo annual security assessments. Data residency requirements must be followed for regulated data.
+
+11. COMPLIANCE AND AUDIT
+Internal and external security audits occur annually. Audit findings must be addressed within agreed remediation timelines. The Chief Information Security Officer (CISO) reports security metrics to the executive committee quarterly. Regulatory compliance with SOC 2, ISO 27001, and industry-specific standards is maintained. Policy violations are logged and may result in suspension of system access pending investigation.
+
+For security incidents or policy questions, contact security@nexuscorp.example or the SOC at ext. 9111.

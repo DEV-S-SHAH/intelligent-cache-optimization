@@ -1,0 +1,35 @@
+NEXUS CORP - EMPLOYEE HANDBOOK
+Effective Date: January 1, 2026
+Version 3.2
+
+1. PURPOSE AND SCOPE
+This handbook establishes the foundational policies, procedures, and expectations for all employees at Nexus Corp. It applies to full-time, part-time, temporary, and contract employees across all global offices. Employees are expected to read, understand, and comply with all policies outlined herein. Managers are responsible for ensuring their teams are aware of updates and enforcing consistent application of these rules.
+
+2. CODE OF CONDUCT
+Nexus Corp maintains a workplace built on respect, integrity, and accountability. All employees must treat colleagues, clients, and partners with dignity regardless of role, background, or identity. Harassment, discrimination, retaliation, and dishonesty are strictly prohibited. Conflicts of interest must be disclosed within five business days of identification. Employees must not engage in outside activities that compete with Nexus Corp or compromise its reputation. Violations may result in disciplinary action up to and including termination.
+
+3. WORK HOURS AND ATTENDANCE
+Standard business hours are 9:00 AM to 5:30 PM, Monday through Friday, in the employee's assigned time zone. Flexible scheduling is available with manager approval. Employees must log attendance through the Workday portal. Chronic absenteeism exceeding three unexcused absences per quarter triggers a formal review. Remote employees must maintain core collaboration hours between 10:00 AM and 3:00 PM for meetings and synchronous communication.
+
+4. PERFORMANCE MANAGEMENT
+Performance is evaluated quarterly using the Nexus Performance Framework (NPF). Goals are set collaboratively during Q1 planning and reviewed mid-year. Ratings range from Exceeds Expectations to Needs Improvement. Employees rated Needs Improvement for two consecutive quarters enter a Performance Improvement Plan (PIP) lasting 90 days. Bonuses are tied to individual and company performance metrics. Promotions require documented excellence, peer feedback, and manager endorsement.
+
+5. LEAVE POLICIES
+Nexus Corp provides paid time off (PTO) accruing at 1.25 days per month for the first two years, increasing to 1.67 days per month thereafter. Sick leave provides up to 12 paid days annually. Parental leave includes 16 weeks of fully paid leave for birthing parents and 8 weeks for non-birthing parents or adoptive parents. Bereavement leave offers up to 5 paid days. Leaves of absence without pay may be granted up to 90 days for medical or personal reasons with HR approval.
+
+6. BENEFITS AND COMPENSATION
+Compensation follows market-competitive bands reviewed annually. Health insurance covers medical, dental, and vision with Nexus Corp paying 90% of premiums for employees and 70% for dependents. The retirement plan includes a 401(k) with 4% company match. Professional development budgets of up to $3,000 per year support courses, certifications, and conferences. Wellness programs provide gym reimbursements up to $75 monthly and mental health support through the employee assistance program.
+
+7. TECHNOLOGY AND EQUIPMENT
+All employees receive a laptop, monitor, and peripherals at onboarding. Equipment must be returned upon termination. Company devices are monitored for security compliance. Personal devices may access corporate resources only through approved VPN and MDM solutions. Software installations require IT approval. Employees must report lost or stolen devices within two hours. Backup power solutions are recommended for remote workers.
+
+8. COMMUNICATION PROTOCOLS
+Internal communication primarily uses Slack for instant messaging, email for formal correspondence, and Notion for documentation. Response expectations are 24 hours for non-urgent emails and 2 hours for Slack direct messages during core hours. Calendar invites should include agendas and be accepted or declined within 4 business hours. All-hands meetings occur monthly and are recorded for asynchronous viewing.
+
+9. HEALTH AND SAFETY
+Nexus Corp maintains OSHA-compliant office environments with ergonomic assessments available on request. Employees must complete annual safety training. Remote workers must maintain a dedicated, distraction-free workspace with proper lighting and ergonomics. Incident reports must be filed within 24 hours of any workplace injury. The company maintains liability insurance and workers' compensation coverage as required by law.
+
+10. TERMINATION AND SEPARATION
+Voluntary resignations require two weeks of notice. Involuntary terminations follow a progressive discipline process unless the violation is severe. Final pay is issued within 72 hours of separation. Continuation of health benefits follows COBRA regulations. Exit interviews are conducted by HR. References are provided according to the company reference policy.
+
+Contact the Human Resources department at hr@nexuscorp.example or ext. 4500 for questions regarding this handbook.

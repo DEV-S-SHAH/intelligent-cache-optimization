@@ -1,0 +1,2680 @@
+{
+  "no_cache": {
+    "mode": "no_cache",
+    "semantic_threshold": 0.85,
+    "queries": [
+      {
+        "text": "Best practices for what is the pythagorean theorem?",
+        "type": "weak_semantic",
+        "latency_ms": 100.3
+      },
+      {
+        "text": "Explain DNS resolution",
+        "type": "hot",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "What is the speed of light? - sehzpotbpnweyceprg",
+        "type": "unique",
+        "latency_ms": 100.26
+      },
+      {
+        "text": "I need information on natural language processing",
+        "type": "strong_semantic",
+        "latency_ms": 100.33
+      },
+      {
+        "text": "What is climate change?",
+        "type": "exact_repeat",
+        "latency_ms": 100.27
+      },
+      {
+        "text": "Best practices for what is the speed of light?",
+        "type": "weak_semantic",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "What can you tell me about memory management work?",
+        "type": "strong_semantic",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "What is the speed of light? - gpxkfzncbcqukbjz",
+        "type": "unique",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "History of explain transaction isolation levels",
+        "type": "weak_semantic",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "What is database normalization?",
+        "type": "exact_repeat",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "Explain recurrent neural networks",
+        "type": "exact_repeat",
+        "latency_ms": 100.19
+      },
+      {
+        "text": "What is an operating system? - bwycmbttdmo",
+        "type": "unique",
+        "latency_ms": 100.26
+      },
+      {
+        "text": "Give me a summary of computer vision",
+        "type": "strong_semantic",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 100.18
+      },
+      {
+        "text": "What is TCP/IP?",
+        "type": "exact_repeat",
+        "latency_ms": 100.2
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "What is reinforcement learning?",
+        "type": "exact_repeat",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "Please describe convolutional neural network work",
+        "type": "strong_semantic",
+        "latency_ms": 100.33
+      },
+      {
+        "text": "Explain DNS resolution (as of 2021)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "Explain DNS resolution - bqfxwbgr",
+        "type": "unique",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "How does convolutional neural network work?",
+        "type": "exact_repeat",
+        "latency_ms": 100.2
+      },
+      {
+        "text": "Common issues with explain transaction isolation levels",
+        "type": "weak_semantic",
+        "latency_ms": 100.16
+      },
+      {
+        "text": "What is reinforcement learning? (as of 2023)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "What is TCP/IP?",
+        "type": "exact_repeat",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "Explain Big O notation",
+        "type": "exact_repeat",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "What can you tell me about latency?",
+        "type": "strong_semantic",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "Can you explain latency?",
+        "type": "strong_semantic",
+        "latency_ms": 100.19
+      },
+      {
+        "text": "What is reinforcement learning?",
+        "type": "exact_repeat",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 100.25
+      },
+      {
+        "text": "What is VPN? - tncqvnfjeyxxpmcj",
+        "type": "unique",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "Difference between what is virtual memory? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "hi",
+        "type": "cold",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "got it",
+        "type": "cold",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "What is HTTP?",
+        "type": "exact_repeat",
+        "latency_ms": 100.2
+      },
+      {
+        "text": "What is cdn?",
+        "type": "strong_semantic",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "Please describe transaction isolation levels",
+        "type": "strong_semantic",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "What is transfer learning?",
+        "type": "hot",
+        "latency_ms": 100.19
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "What is HTTP?",
+        "type": "exact_repeat",
+        "latency_ms": 100.25
+      },
+      {
+        "text": "How does convolutional neural network work?",
+        "type": "exact_repeat",
+        "latency_ms": 100.27
+      },
+      {
+        "text": "How does routing work? (as of 2021)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "What can you tell me about serverless computing?",
+        "type": "strong_semantic",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "Explain version control (as of 2022)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.2
+      },
+      {
+        "text": "Give me a summary of backpropagation work",
+        "type": "strong_semantic",
+        "latency_ms": 100.2
+      },
+      {
+        "text": "Difference between what is http? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 100.19
+      },
+      {
+        "text": "What is TCP/IP? - dyomuuecllmsrzck",
+        "type": "unique",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "What do you know about a system call?",
+        "type": "strong_semantic",
+        "latency_ms": 100.27
+      },
+      {
+        "text": "How does functional programming work?",
+        "type": "strong_semantic",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "exact_repeat",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "Explain serverless computing - gxbqvbidzelsocy",
+        "type": "unique",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "Difference between how does routing work? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "Best practices for what is multithreading?",
+        "type": "weak_semantic",
+        "latency_ms": 100.19
+      },
+      {
+        "text": "What do you know about interrupt handling?",
+        "type": "strong_semantic",
+        "latency_ms": 100.2
+      },
+      {
+        "text": "Give me a summary of version control",
+        "type": "strong_semantic",
+        "latency_ms": 100.25
+      },
+      {
+        "text": "ok",
+        "type": "cold",
+        "latency_ms": 100.2
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "What is a system call? - wgelkhgylwobzvzywemf",
+        "type": "unique",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "What is database normalization?",
+        "type": "exact_repeat",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "What is cloud storage? - zwasrngqclly",
+        "type": "unique",
+        "latency_ms": 100.26
+      },
+      {
+        "text": "What is the capital of France?",
+        "type": "exact_repeat",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "What can you tell me about deadlock?",
+        "type": "strong_semantic",
+        "latency_ms": 100.2
+      },
+      {
+        "text": "good morning",
+        "type": "cold",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "Best practices for explain load balancer in cloud",
+        "type": "weak_semantic",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "How does the water cycle work? - bfgywwjev",
+        "type": "unique",
+        "latency_ms": 100.38
+      },
+      {
+        "text": "good morning",
+        "type": "cold",
+        "latency_ms": 100.28
+      },
+      {
+        "text": "What is a data structure? - eakyuhss",
+        "type": "unique",
+        "latency_ms": 100.62
+      },
+      {
+        "text": "How does gradient descent work?",
+        "type": "strong_semantic",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 100.25
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 100.25
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "exact_repeat",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "What is the capital of France?",
+        "type": "exact_repeat",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "What is a relational database? - gpqkpnyfsgkrhitbl",
+        "type": "unique",
+        "latency_ms": 100.18
+      },
+      {
+        "text": "What is VPN? - wlfosfizqlndfipf",
+        "type": "unique",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "Give me a summary of database replication",
+        "type": "strong_semantic",
+        "latency_ms": 100.25
+      },
+      {
+        "text": "What is vpn?",
+        "type": "strong_semantic",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "What is climate change?",
+        "type": "exact_repeat",
+        "latency_ms": 100.18
+      },
+      {
+        "text": "Explain recurrent neural networks (as of 2023)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.76
+      },
+      {
+        "text": "no",
+        "type": "cold",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "got it",
+        "type": "cold",
+        "latency_ms": 100.2
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "How does packet switching work? - zunroycwgxtehfirw",
+        "type": "unique",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "I need information on version control",
+        "type": "strong_semantic",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "Explain Big O notation",
+        "type": "exact_repeat",
+        "latency_ms": 100.26
+      },
+      {
+        "text": "Please describe a relational database",
+        "type": "strong_semantic",
+        "latency_ms": 100.23
+      },
+      {
+        "text": "Can you explain http?",
+        "type": "strong_semantic",
+        "latency_ms": 100.35
+      },
+      {
+        "text": "Common issues with explain interrupt handling",
+        "type": "weak_semantic",
+        "latency_ms": 100.36
+      },
+      {
+        "text": "What can you tell me about debugging?",
+        "type": "strong_semantic",
+        "latency_ms": 100.21
+      },
+      {
+        "text": "What is ACID compliance? - ajolbjyzbjrrjowz",
+        "type": "unique",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "Explain recurrent neural networks",
+        "type": "exact_repeat",
+        "latency_ms": 100.22
+      },
+      {
+        "text": "How does acid compliance work?",
+        "type": "strong_semantic",
+        "latency_ms": 100.24
+      },
+      {
+        "text": "Can you explain a system call?",
+        "type": "strong_semantic",
+        "latency_ms": 100.51
+      },
+      {
+        "text": "Can you explain cap theorem?",
+        "type": "strong_semantic",
+        "latency_ms": 100.24
+      }
+    ],
+    "total_queries": 100,
+    "llm_calls": 100.0,
+    "cache_hits": 0.0,
+    "cache_misses": 100.0,
+    "exact_hits": 0.0,
+    "semantic_hits": 0.0,
+    "tool_hits": 0.0,
+    "context_hits": 0.0,
+    "total_latency_ms": 10024.21498298645,
+    "latencies": [
+      100.30460357666016,
+      100.24142265319824,
+      100.25739669799805,
+      100.33011436462402,
+      100.26836395263672,
+      100.21686553955078,
+      100.21400451660156,
+      100.20828247070312,
+      100.2192497253418,
+      100.21543502807617,
+      100.18515586853027,
+      100.26431083679199,
+      100.24094581604004,
+      100.22950172424316,
+      100.18420219421387,
+      100.20065307617188,
+      100.21424293518066,
+      100.22592544555664,
+      100.21519660949707,
+      100.32939910888672,
+      100.21209716796875,
+      100.22115707397461,
+      100.20065307617188,
+      100.1596450805664,
+      100.21352767944336,
+      100.21781921386719,
+      100.20661354064941,
+      100.20589828491211,
+      100.2202033996582,
+      100.21758079528809,
+      100.19063949584961,
+      100.23713111877441,
+      100.24785995483398,
+      100.2197265625,
+      100.21352767944336,
+      100.2051830291748,
+      100.20899772644043,
+      100.20160675048828,
+      100.22449493408203,
+      100.23951530456543,
+      100.21400451660156,
+      100.18801689147949,
+      100.23903846740723,
+      100.2504825592041,
+      100.26884078979492,
+      100.22664070129395,
+      100.2345085144043,
+      100.19993782043457,
+      100.19707679748535,
+      100.1889705657959,
+      100.21829605102539,
+      100.26812553405762,
+      100.2204418182373,
+      100.23975372314453,
+      100.24213790893555,
+      100.23283958435059,
+      100.21686553955078,
+      100.19493103027344,
+      100.2042293548584,
+      100.2495288848877,
+      100.19636154174805,
+      100.2359390258789,
+      100.22830963134766,
+      100.22735595703125,
+      100.25787353515625,
+      100.2357006072998,
+      100.2039909362793,
+      100.20780563354492,
+      100.21519660949707,
+      100.37565231323242,
+      100.27575492858887,
+      100.616455078125,
+      100.22997856140137,
+      100.24762153625488,
+      100.24857521057129,
+      100.22211074829102,
+      100.23331642150879,
+      100.17752647399902,
+      100.24499893188477,
+      100.24785995483398,
+      100.22974014282227,
+      100.17633438110352,
+      100.76117515563965,
+      100.23379325866699,
+      100.21686553955078,
+      100.19826889038086,
+      100.2345085144043,
+      100.21615028381348,
+      100.23188591003418,
+      100.22592544555664,
+      100.25668144226074,
+      100.22544860839844,
+      100.35300254821777,
+      100.36182403564453,
+      100.21233558654785,
+      100.2204418182373,
+      100.22401809692383,
+      100.24094581604004,
+      100.50702095031738,
+      100.23641586303711
+    ],
+    "tokens_saved": 0.0,
+    "cost_saved": 0.0,
+    "start_time": "2026-09-07T01:17:41.368693",
+    "cache_decisions": [],
+    "cache_efficiency": {
+      "total_entries": 0,
+      "unique_entries": 0,
+      "evictions": 0,
+      "expired_entries": 0,
+      "avg_hits_per_entry": 0.0
+    },
+    "end_time": "2026-09-07T01:17:51.395904",
+    "avg_latency_ms": 100.2421498298645,
+    "p50_latency_ms": 100.22497177124023,
+    "p95_latency_ms": 100.35344362258911,
+    "min_latency_ms": 100.1596450805664,
+    "max_latency_ms": 100.76117515563965,
+    "hit_rate": 0.0,
+    "runs": 1
+  },
+  "exact_cache": {
+    "mode": "exact_cache",
+    "semantic_threshold": 0.85,
+    "queries": [
+      {
+        "text": "Best practices for what is the pythagorean theorem?",
+        "type": "weak_semantic",
+        "latency_ms": 100.47
+      },
+      {
+        "text": "Explain DNS resolution",
+        "type": "hot",
+        "latency_ms": 100.58
+      },
+      {
+        "text": "What is the speed of light? - sehzpotbpnweyceprg",
+        "type": "unique",
+        "latency_ms": 100.33
+      },
+      {
+        "text": "I need information on natural language processing",
+        "type": "strong_semantic",
+        "latency_ms": 100.29
+      },
+      {
+        "text": "What is climate change?",
+        "type": "exact_repeat",
+        "latency_ms": 100.33
+      },
+      {
+        "text": "Best practices for what is the speed of light?",
+        "type": "weak_semantic",
+        "latency_ms": 100.51
+      },
+      {
+        "text": "What can you tell me about memory management work?",
+        "type": "strong_semantic",
+        "latency_ms": 100.34
+      },
+      {
+        "text": "What is the speed of light? - gpxkfzncbcqukbjz",
+        "type": "unique",
+        "latency_ms": 100.34
+      },
+      {
+        "text": "History of explain transaction isolation levels",
+        "type": "weak_semantic",
+        "latency_ms": 100.44
+      },
+      {
+        "text": "What is database normalization?",
+        "type": "exact_repeat",
+        "latency_ms": 100.35
+      },
+      {
+        "text": "Explain recurrent neural networks",
+        "type": "exact_repeat",
+        "latency_ms": 100.38
+      },
+      {
+        "text": "What is an operating system? - bwycmbttdmo",
+        "type": "unique",
+        "latency_ms": 100.36
+      },
+      {
+        "text": "Give me a summary of computer vision",
+        "type": "strong_semantic",
+        "latency_ms": 100.4
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 100.35
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 100.33
+      },
+      {
+        "text": "What is TCP/IP?",
+        "type": "exact_repeat",
+        "latency_ms": 100.35
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 100.37
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 0.3
+      },
+      {
+        "text": "What is reinforcement learning?",
+        "type": "exact_repeat",
+        "latency_ms": 100.37
+      },
+      {
+        "text": "Please describe convolutional neural network work",
+        "type": "strong_semantic",
+        "latency_ms": 100.39
+      },
+      {
+        "text": "Explain DNS resolution (as of 2021)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.37
+      },
+      {
+        "text": "Explain DNS resolution - bqfxwbgr",
+        "type": "unique",
+        "latency_ms": 100.46
+      },
+      {
+        "text": "How does convolutional neural network work?",
+        "type": "exact_repeat",
+        "latency_ms": 100.55
+      },
+      {
+        "text": "Common issues with explain transaction isolation levels",
+        "type": "weak_semantic",
+        "latency_ms": 100.36
+      },
+      {
+        "text": "What is reinforcement learning? (as of 2023)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.49
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 0.27
+      },
+      {
+        "text": "What is TCP/IP?",
+        "type": "exact_repeat",
+        "latency_ms": 0.25
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 100.3
+      },
+      {
+        "text": "Explain Big O notation",
+        "type": "exact_repeat",
+        "latency_ms": 100.36
+      },
+      {
+        "text": "What can you tell me about latency?",
+        "type": "strong_semantic",
+        "latency_ms": 100.36
+      },
+      {
+        "text": "Can you explain latency?",
+        "type": "strong_semantic",
+        "latency_ms": 100.58
+      },
+      {
+        "text": "What is reinforcement learning?",
+        "type": "exact_repeat",
+        "latency_ms": 0.28
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 0.23
+      },
+      {
+        "text": "What is VPN? - tncqvnfjeyxxpmcj",
+        "type": "unique",
+        "latency_ms": 100.38
+      },
+      {
+        "text": "Difference between what is virtual memory? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 100.35
+      },
+      {
+        "text": "hi",
+        "type": "cold",
+        "latency_ms": 100.31
+      },
+      {
+        "text": "got it",
+        "type": "cold",
+        "latency_ms": 100.38
+      },
+      {
+        "text": "What is HTTP?",
+        "type": "exact_repeat",
+        "latency_ms": 100.34
+      },
+      {
+        "text": "What is cdn?",
+        "type": "strong_semantic",
+        "latency_ms": 0.22
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 0.2
+      },
+      {
+        "text": "Please describe transaction isolation levels",
+        "type": "strong_semantic",
+        "latency_ms": 100.54
+      },
+      {
+        "text": "What is transfer learning?",
+        "type": "hot",
+        "latency_ms": 100.28
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 0.23
+      },
+      {
+        "text": "What is HTTP?",
+        "type": "exact_repeat",
+        "latency_ms": 0.3
+      },
+      {
+        "text": "How does convolutional neural network work?",
+        "type": "exact_repeat",
+        "latency_ms": 0.28
+      },
+      {
+        "text": "How does routing work? (as of 2021)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.31
+      },
+      {
+        "text": "What can you tell me about serverless computing?",
+        "type": "strong_semantic",
+        "latency_ms": 100.86
+      },
+      {
+        "text": "Explain version control (as of 2022)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.36
+      },
+      {
+        "text": "Give me a summary of backpropagation work",
+        "type": "strong_semantic",
+        "latency_ms": 100.34
+      },
+      {
+        "text": "Difference between what is http? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 100.49
+      },
+      {
+        "text": "What is TCP/IP? - dyomuuecllmsrzck",
+        "type": "unique",
+        "latency_ms": 100.76
+      },
+      {
+        "text": "What do you know about a system call?",
+        "type": "strong_semantic",
+        "latency_ms": 100.39
+      },
+      {
+        "text": "How does functional programming work?",
+        "type": "strong_semantic",
+        "latency_ms": 100.31
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "exact_repeat",
+        "latency_ms": 0.32
+      },
+      {
+        "text": "Explain serverless computing - gxbqvbidzelsocy",
+        "type": "unique",
+        "latency_ms": 100.32
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 0.27
+      },
+      {
+        "text": "Difference between how does routing work? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 100.29
+      },
+      {
+        "text": "Best practices for what is multithreading?",
+        "type": "weak_semantic",
+        "latency_ms": 100.34
+      },
+      {
+        "text": "What do you know about interrupt handling?",
+        "type": "strong_semantic",
+        "latency_ms": 100.51
+      },
+      {
+        "text": "Give me a summary of version control",
+        "type": "strong_semantic",
+        "latency_ms": 100.28
+      },
+      {
+        "text": "ok",
+        "type": "cold",
+        "latency_ms": 100.33
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 0.31
+      },
+      {
+        "text": "What is a system call? - wgelkhgylwobzvzywemf",
+        "type": "unique",
+        "latency_ms": 100.44
+      },
+      {
+        "text": "What is database normalization?",
+        "type": "exact_repeat",
+        "latency_ms": 0.28
+      },
+      {
+        "text": "What is cloud storage? - zwasrngqclly",
+        "type": "unique",
+        "latency_ms": 100.33
+      },
+      {
+        "text": "What is the capital of France?",
+        "type": "exact_repeat",
+        "latency_ms": 100.36
+      },
+      {
+        "text": "What can you tell me about deadlock?",
+        "type": "strong_semantic",
+        "latency_ms": 100.41
+      },
+      {
+        "text": "good morning",
+        "type": "cold",
+        "latency_ms": 100.38
+      },
+      {
+        "text": "Best practices for explain load balancer in cloud",
+        "type": "weak_semantic",
+        "latency_ms": 100.34
+      },
+      {
+        "text": "How does the water cycle work? - bfgywwjev",
+        "type": "unique",
+        "latency_ms": 100.35
+      },
+      {
+        "text": "good morning",
+        "type": "cold",
+        "latency_ms": 0.27
+      },
+      {
+        "text": "What is a data structure? - eakyuhss",
+        "type": "unique",
+        "latency_ms": 100.3
+      },
+      {
+        "text": "How does gradient descent work?",
+        "type": "strong_semantic",
+        "latency_ms": 100.42
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 0.29
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 0.23
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "exact_repeat",
+        "latency_ms": 0.21
+      },
+      {
+        "text": "What is the capital of France?",
+        "type": "exact_repeat",
+        "latency_ms": 0.21
+      },
+      {
+        "text": "What is a relational database? - gpqkpnyfsgkrhitbl",
+        "type": "unique",
+        "latency_ms": 100.48
+      },
+      {
+        "text": "What is VPN? - wlfosfizqlndfipf",
+        "type": "unique",
+        "latency_ms": 100.36
+      },
+      {
+        "text": "Give me a summary of database replication",
+        "type": "strong_semantic",
+        "latency_ms": 100.38
+      },
+      {
+        "text": "What is vpn?",
+        "type": "strong_semantic",
+        "latency_ms": 100.33
+      },
+      {
+        "text": "What is climate change?",
+        "type": "exact_repeat",
+        "latency_ms": 0.28
+      },
+      {
+        "text": "Explain recurrent neural networks (as of 2023)",
+        "type": "dynamic_stale",
+        "latency_ms": 100.34
+      },
+      {
+        "text": "no",
+        "type": "cold",
+        "latency_ms": 100.29
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 0.38
+      },
+      {
+        "text": "got it",
+        "type": "cold",
+        "latency_ms": 0.44
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 0.29
+      },
+      {
+        "text": "How does packet switching work? - zunroycwgxtehfirw",
+        "type": "unique",
+        "latency_ms": 100.36
+      },
+      {
+        "text": "I need information on version control",
+        "type": "strong_semantic",
+        "latency_ms": 100.42
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 0.27
+      },
+      {
+        "text": "Explain Big O notation",
+        "type": "exact_repeat",
+        "latency_ms": 0.22
+      },
+      {
+        "text": "Please describe a relational database",
+        "type": "strong_semantic",
+        "latency_ms": 100.3
+      },
+      {
+        "text": "Can you explain http?",
+        "type": "strong_semantic",
+        "latency_ms": 100.46
+      },
+      {
+        "text": "Common issues with explain interrupt handling",
+        "type": "weak_semantic",
+        "latency_ms": 100.76
+      },
+      {
+        "text": "What can you tell me about debugging?",
+        "type": "strong_semantic",
+        "latency_ms": 100.39
+      },
+      {
+        "text": "What is ACID compliance? - ajolbjyzbjrrjowz",
+        "type": "unique",
+        "latency_ms": 100.33
+      },
+      {
+        "text": "Explain recurrent neural networks",
+        "type": "exact_repeat",
+        "latency_ms": 0.32
+      },
+      {
+        "text": "How does acid compliance work?",
+        "type": "strong_semantic",
+        "latency_ms": 100.31
+      },
+      {
+        "text": "Can you explain a system call?",
+        "type": "strong_semantic",
+        "latency_ms": 100.32
+      },
+      {
+        "text": "Can you explain cap theorem?",
+        "type": "strong_semantic",
+        "latency_ms": 100.32
+      }
+    ],
+    "total_queries": 100,
+    "llm_calls": 74.0,
+    "cache_hits": 26.0,
+    "cache_misses": 74.0,
+    "exact_hits": 26.0,
+    "semantic_hits": 0.0,
+    "tool_hits": 0.0,
+    "context_hits": 0.0,
+    "total_latency_ms": 7436.19704246521,
+    "latencies": [
+      100.47173500061035,
+      100.58403015136719,
+      100.33082962036133,
+      100.29387474060059,
+      100.32773017883301,
+      100.5101203918457,
+      100.34036636352539,
+      100.33845901489258,
+      100.44407844543457,
+      100.35061836242676,
+      100.37875175476074,
+      100.35514831542969,
+      100.4030704498291,
+      100.34680366516113,
+      100.33440589904785,
+      100.34966468811035,
+      100.3713607788086,
+      0.30040740966796875,
+      100.37493705749512,
+      100.39138793945312,
+      100.37040710449219,
+      100.45552253723145,
+      100.55184364318848,
+      100.35991668701172,
+      100.49033164978027,
+      0.27370452880859375,
+      0.24962425231933594,
+      100.29959678649902,
+      100.3580093383789,
+      100.35920143127441,
+      100.57806968688965,
+      0.2777576446533203,
+      0.22792816162109375,
+      100.37946701049805,
+      100.34656524658203,
+      100.31247138977051,
+      100.38280487060547,
+      100.33893585205078,
+      0.21529197692871094,
+      0.19741058349609375,
+      100.54373741149902,
+      100.27790069580078,
+      0.232696533203125,
+      0.2951622009277344,
+      0.2791881561279297,
+      100.30698776245117,
+      100.85654258728027,
+      100.3570556640625,
+      100.33774375915527,
+      100.49200057983398,
+      100.75545310974121,
+      100.38948059082031,
+      100.31485557556152,
+      0.31685829162597656,
+      100.31747817993164,
+      0.27441978454589844,
+      100.28910636901855,
+      100.33631324768066,
+      100.51417350769043,
+      100.27694702148438,
+      100.33226013183594,
+      0.3097057342529297,
+      100.44264793395996,
+      0.2846717834472656,
+      100.32963752746582,
+      100.36492347717285,
+      100.40545463562012,
+      100.37517547607422,
+      100.33655166625977,
+      100.34775733947754,
+      0.2665519714355469,
+      100.30078887939453,
+      100.42238235473633,
+      0.28705596923828125,
+      0.22745132446289062,
+      0.2129077911376953,
+      0.21314620971679688,
+      100.48294067382812,
+      100.36277770996094,
+      100.37875175476074,
+      100.33440589904785,
+      0.28133392333984375,
+      100.33726692199707,
+      100.28815269470215,
+      0.3845691680908203,
+      0.4420280456542969,
+      0.29349327087402344,
+      100.3575325012207,
+      100.41546821594238,
+      0.2727508544921875,
+      0.2167224884033203,
+      100.29768943786621,
+      100.45742988586426,
+      100.75616836547852,
+      100.39281845092773,
+      100.3272533416748,
+      0.31948089599609375,
+      100.30889511108398,
+      100.31986236572266,
+      100.32343864440918
+    ],
+    "tokens_saved": 531.7000000000002,
+    "cost_saved": 0.010633999999999994,
+    "start_time": "2026-09-07T01:17:51.482260",
+    "cache_decisions": [],
+    "cache_efficiency": {
+      "total_entries": 74,
+      "unique_entries": 74,
+      "evictions": 0,
+      "expired_entries": 0,
+      "avg_hits_per_entry": 0.0
+    },
+    "end_time": "2026-09-07T01:17:59.020671",
+    "avg_latency_ms": 74.3619704246521,
+    "p50_latency_ms": 100.33690929412842,
+    "p95_latency_ms": 100.55315494537354,
+    "min_latency_ms": 0.19741058349609375,
+    "max_latency_ms": 100.85654258728027,
+    "hit_rate": 0.26,
+    "runs": 1
+  },
+  "semantic_cache": {
+    "mode": "semantic_cache",
+    "semantic_threshold": 0.85,
+    "queries": [
+      {
+        "text": "Best practices for what is the pythagorean theorem?",
+        "type": "weak_semantic",
+        "latency_ms": 121.53
+      },
+      {
+        "text": "Explain DNS resolution",
+        "type": "hot",
+        "latency_ms": 113.26
+      },
+      {
+        "text": "What is the speed of light? - sehzpotbpnweyceprg",
+        "type": "unique",
+        "latency_ms": 119.02
+      },
+      {
+        "text": "I need information on natural language processing",
+        "type": "strong_semantic",
+        "latency_ms": 111.01
+      },
+      {
+        "text": "What is climate change?",
+        "type": "exact_repeat",
+        "latency_ms": 110.6
+      },
+      {
+        "text": "Best practices for what is the speed of light?",
+        "type": "weak_semantic",
+        "latency_ms": 111.12
+      },
+      {
+        "text": "What can you tell me about memory management work?",
+        "type": "strong_semantic",
+        "latency_ms": 111.36
+      },
+      {
+        "text": "What is the speed of light? - gpxkfzncbcqukbjz",
+        "type": "unique",
+        "latency_ms": 12.39
+      },
+      {
+        "text": "History of explain transaction isolation levels",
+        "type": "weak_semantic",
+        "latency_ms": 109.43
+      },
+      {
+        "text": "What is database normalization?",
+        "type": "exact_repeat",
+        "latency_ms": 114.0
+      },
+      {
+        "text": "Explain recurrent neural networks",
+        "type": "exact_repeat",
+        "latency_ms": 111.94
+      },
+      {
+        "text": "What is an operating system? - bwycmbttdmo",
+        "type": "unique",
+        "latency_ms": 112.29
+      },
+      {
+        "text": "Give me a summary of computer vision",
+        "type": "strong_semantic",
+        "latency_ms": 110.35
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 108.91
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 110.63
+      },
+      {
+        "text": "What is TCP/IP?",
+        "type": "exact_repeat",
+        "latency_ms": 111.0
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 115.57
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 10.83
+      },
+      {
+        "text": "What is reinforcement learning?",
+        "type": "exact_repeat",
+        "latency_ms": 109.61
+      },
+      {
+        "text": "Please describe convolutional neural network work",
+        "type": "strong_semantic",
+        "latency_ms": 117.77
+      },
+      {
+        "text": "Explain DNS resolution (as of 2021)",
+        "type": "dynamic_stale",
+        "latency_ms": 11.01
+      },
+      {
+        "text": "Explain DNS resolution - bqfxwbgr",
+        "type": "unique",
+        "latency_ms": 109.98
+      },
+      {
+        "text": "How does convolutional neural network work?",
+        "type": "exact_repeat",
+        "latency_ms": 111.87
+      },
+      {
+        "text": "Common issues with explain transaction isolation levels",
+        "type": "weak_semantic",
+        "latency_ms": 15.06
+      },
+      {
+        "text": "What is reinforcement learning? (as of 2023)",
+        "type": "dynamic_stale",
+        "latency_ms": 10.11
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 9.0
+      },
+      {
+        "text": "What is TCP/IP?",
+        "type": "exact_repeat",
+        "latency_ms": 8.56
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 108.41
+      },
+      {
+        "text": "Explain Big O notation",
+        "type": "exact_repeat",
+        "latency_ms": 109.95
+      },
+      {
+        "text": "What can you tell me about latency?",
+        "type": "strong_semantic",
+        "latency_ms": 110.76
+      },
+      {
+        "text": "Can you explain latency?",
+        "type": "strong_semantic",
+        "latency_ms": 10.86
+      },
+      {
+        "text": "What is reinforcement learning?",
+        "type": "exact_repeat",
+        "latency_ms": 9.24
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 8.93
+      },
+      {
+        "text": "What is VPN? - tncqvnfjeyxxpmcj",
+        "type": "unique",
+        "latency_ms": 111.16
+      },
+      {
+        "text": "Difference between what is virtual memory? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 111.43
+      },
+      {
+        "text": "hi",
+        "type": "cold",
+        "latency_ms": 113.06
+      },
+      {
+        "text": "got it",
+        "type": "cold",
+        "latency_ms": 114.25
+      },
+      {
+        "text": "What is HTTP?",
+        "type": "exact_repeat",
+        "latency_ms": 113.72
+      },
+      {
+        "text": "What is cdn?",
+        "type": "strong_semantic",
+        "latency_ms": 14.26
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 13.45
+      },
+      {
+        "text": "Please describe transaction isolation levels",
+        "type": "strong_semantic",
+        "latency_ms": 113.47
+      },
+      {
+        "text": "What is transfer learning?",
+        "type": "hot",
+        "latency_ms": 110.79
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 10.73
+      },
+      {
+        "text": "What is HTTP?",
+        "type": "exact_repeat",
+        "latency_ms": 8.96
+      },
+      {
+        "text": "How does convolutional neural network work?",
+        "type": "exact_repeat",
+        "latency_ms": 9.96
+      },
+      {
+        "text": "How does routing work? (as of 2021)",
+        "type": "dynamic_stale",
+        "latency_ms": 109.94
+      },
+      {
+        "text": "What can you tell me about serverless computing?",
+        "type": "strong_semantic",
+        "latency_ms": 111.27
+      },
+      {
+        "text": "Explain version control (as of 2022)",
+        "type": "dynamic_stale",
+        "latency_ms": 110.58
+      },
+      {
+        "text": "Give me a summary of backpropagation work",
+        "type": "strong_semantic",
+        "latency_ms": 116.25
+      },
+      {
+        "text": "Difference between what is http? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 111.37
+      },
+      {
+        "text": "What is TCP/IP? - dyomuuecllmsrzck",
+        "type": "unique",
+        "latency_ms": 112.04
+      },
+      {
+        "text": "What do you know about a system call?",
+        "type": "strong_semantic",
+        "latency_ms": 111.5
+      },
+      {
+        "text": "How does functional programming work?",
+        "type": "strong_semantic",
+        "latency_ms": 110.78
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "exact_repeat",
+        "latency_ms": 10.84
+      },
+      {
+        "text": "Explain serverless computing - gxbqvbidzelsocy",
+        "type": "unique",
+        "latency_ms": 110.82
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 10.36
+      },
+      {
+        "text": "Difference between how does routing work? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 109.9
+      },
+      {
+        "text": "Best practices for what is multithreading?",
+        "type": "weak_semantic",
+        "latency_ms": 111.44
+      },
+      {
+        "text": "What do you know about interrupt handling?",
+        "type": "strong_semantic",
+        "latency_ms": 115.23
+      },
+      {
+        "text": "Give me a summary of version control",
+        "type": "strong_semantic",
+        "latency_ms": 15.38
+      },
+      {
+        "text": "ok",
+        "type": "cold",
+        "latency_ms": 110.06
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 11.07
+      },
+      {
+        "text": "What is a system call? - wgelkhgylwobzvzywemf",
+        "type": "unique",
+        "latency_ms": 117.91
+      },
+      {
+        "text": "What is database normalization?",
+        "type": "exact_repeat",
+        "latency_ms": 10.61
+      },
+      {
+        "text": "What is cloud storage? - zwasrngqclly",
+        "type": "unique",
+        "latency_ms": 110.72
+      },
+      {
+        "text": "What is the capital of France?",
+        "type": "exact_repeat",
+        "latency_ms": 110.75
+      },
+      {
+        "text": "What can you tell me about deadlock?",
+        "type": "strong_semantic",
+        "latency_ms": 115.09
+      },
+      {
+        "text": "good morning",
+        "type": "cold",
+        "latency_ms": 113.67
+      },
+      {
+        "text": "Best practices for explain load balancer in cloud",
+        "type": "weak_semantic",
+        "latency_ms": 115.73
+      },
+      {
+        "text": "How does the water cycle work? - bfgywwjev",
+        "type": "unique",
+        "latency_ms": 112.31
+      },
+      {
+        "text": "good morning",
+        "type": "cold",
+        "latency_ms": 14.72
+      },
+      {
+        "text": "What is a data structure? - eakyuhss",
+        "type": "unique",
+        "latency_ms": 116.53
+      },
+      {
+        "text": "How does gradient descent work?",
+        "type": "strong_semantic",
+        "latency_ms": 115.23
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 8.43
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 9.09
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "exact_repeat",
+        "latency_ms": 9.47
+      },
+      {
+        "text": "What is the capital of France?",
+        "type": "exact_repeat",
+        "latency_ms": 9.37
+      },
+      {
+        "text": "What is a relational database? - gpqkpnyfsgkrhitbl",
+        "type": "unique",
+        "latency_ms": 111.62
+      },
+      {
+        "text": "What is VPN? - wlfosfizqlndfipf",
+        "type": "unique",
+        "latency_ms": 117.3
+      },
+      {
+        "text": "Give me a summary of database replication",
+        "type": "strong_semantic",
+        "latency_ms": 110.77
+      },
+      {
+        "text": "What is vpn?",
+        "type": "strong_semantic",
+        "latency_ms": 10.92
+      },
+      {
+        "text": "What is climate change?",
+        "type": "exact_repeat",
+        "latency_ms": 9.82
+      },
+      {
+        "text": "Explain recurrent neural networks (as of 2023)",
+        "type": "dynamic_stale",
+        "latency_ms": 10.52
+      },
+      {
+        "text": "no",
+        "type": "cold",
+        "latency_ms": 107.4
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 10.74
+      },
+      {
+        "text": "got it",
+        "type": "cold",
+        "latency_ms": 9.2
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 9.69
+      },
+      {
+        "text": "How does packet switching work? - zunroycwgxtehfirw",
+        "type": "unique",
+        "latency_ms": 111.74
+      },
+      {
+        "text": "I need information on version control",
+        "type": "strong_semantic",
+        "latency_ms": 114.76
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 17.09
+      },
+      {
+        "text": "Explain Big O notation",
+        "type": "exact_repeat",
+        "latency_ms": 23.15
+      },
+      {
+        "text": "Please describe a relational database",
+        "type": "strong_semantic",
+        "latency_ms": 111.37
+      },
+      {
+        "text": "Can you explain http?",
+        "type": "strong_semantic",
+        "latency_ms": 14.29
+      },
+      {
+        "text": "Common issues with explain interrupt handling",
+        "type": "weak_semantic",
+        "latency_ms": 113.42
+      },
+      {
+        "text": "What can you tell me about debugging?",
+        "type": "strong_semantic",
+        "latency_ms": 111.46
+      },
+      {
+        "text": "What is ACID compliance? - ajolbjyzbjrrjowz",
+        "type": "unique",
+        "latency_ms": 112.95
+      },
+      {
+        "text": "Explain recurrent neural networks",
+        "type": "exact_repeat",
+        "latency_ms": 9.93
+      },
+      {
+        "text": "How does acid compliance work?",
+        "type": "strong_semantic",
+        "latency_ms": 9.44
+      },
+      {
+        "text": "Can you explain a system call?",
+        "type": "strong_semantic",
+        "latency_ms": 9.21
+      },
+      {
+        "text": "Can you explain cap theorem?",
+        "type": "strong_semantic",
+        "latency_ms": 109.06
+      }
+    ],
+    "total_queries": 100,
+    "llm_calls": 63.0,
+    "cache_hits": 37.0,
+    "cache_misses": 63.0,
+    "exact_hits": 0.0,
+    "semantic_hits": 37.0,
+    "tool_hits": 0.0,
+    "context_hits": 0.0,
+    "total_latency_ms": 7495.911121368408,
+    "latencies": [
+      121.53100967407227,
+      113.26146125793457,
+      119.01617050170898,
+      111.01055145263672,
+      110.60357093811035,
+      111.11879348754883,
+      111.36460304260254,
+      12.393712997436523,
+      109.43055152893066,
+      114.00246620178223,
+      111.94205284118652,
+      112.29205131530762,
+      110.34750938415527,
+      108.90865325927734,
+      110.63432693481445,
+      110.99505424499512,
+      115.57126045227051,
+      10.825872421264648,
+      109.61127281188965,
+      117.77043342590332,
+      11.014938354492188,
+      109.97748374938965,
+      111.86861991882324,
+      15.062093734741211,
+      10.107040405273438,
+      8.999109268188477,
+      8.558273315429688,
+      108.41226577758789,
+      109.95149612426758,
+      110.75544357299805,
+      10.859489440917969,
+      9.237527847290039,
+      8.933067321777344,
+      111.15598678588867,
+      111.43016815185547,
+      113.06023597717285,
+      114.24732208251953,
+      113.7232780456543,
+      14.260530471801758,
+      13.454675674438477,
+      113.47365379333496,
+      110.79216003417969,
+      10.73455810546875,
+      8.955240249633789,
+      9.961843490600586,
+      109.93766784667969,
+      111.27138137817383,
+      110.57567596435547,
+      116.25099182128906,
+      111.37127876281738,
+      112.04290390014648,
+      111.4964485168457,
+      110.78476905822754,
+      10.835409164428711,
+      110.81910133361816,
+      10.360956192016602,
+      109.90309715270996,
+      111.4354133605957,
+      115.23032188415527,
+      15.383005142211914,
+      110.05544662475586,
+      11.070013046264648,
+      117.90752410888672,
+      10.605573654174805,
+      110.72421073913574,
+      110.75258255004883,
+      115.08560180664062,
+      113.67225646972656,
+      115.73410034179688,
+      112.30587959289551,
+      14.717578887939453,
+      116.52755737304688,
+      115.22841453552246,
+      8.43191146850586,
+      9.086847305297852,
+      9.468555450439453,
+      9.369134902954102,
+      111.62304878234863,
+      117.30289459228516,
+      110.77404022216797,
+      10.915040969848633,
+      9.823799133300781,
+      10.521173477172852,
+      107.40017890930176,
+      10.738611221313477,
+      9.203910827636719,
+      9.691953659057617,
+      111.73629760742188,
+      114.7608757019043,
+      17.091751098632812,
+      23.149728775024414,
+      111.36531829833984,
+      14.285802841186523,
+      113.4190559387207,
+      111.46140098571777,
+      112.95127868652344,
+      9.928703308105469,
+      9.436607360839844,
+      9.206295013427734,
+      109.06386375427246
+    ],
+    "tokens_saved": 594.1,
+    "cost_saved": 0.011881999999999993,
+    "start_time": "2026-09-07T01:17:59.112961",
+    "cache_decisions": [],
+    "cache_efficiency": {
+      "total_entries": 63,
+      "unique_entries": 63,
+      "evictions": 0,
+      "expired_entries": 0,
+      "avg_hits_per_entry": 0.0
+    },
+    "end_time": "2026-09-07T01:18:06.816692",
+    "avg_latency_ms": 74.95911121368408,
+    "p50_latency_ms": 110.58962345123291,
+    "p95_latency_ms": 116.56632423400879,
+    "min_latency_ms": 8.43191146850586,
+    "max_latency_ms": 121.53100967407227,
+    "hit_rate": 0.37,
+    "runs": 1
+  },
+  "intelligent_multi_level": {
+    "mode": "intelligent_multi_level",
+    "semantic_threshold": 0.85,
+    "queries": [
+      {
+        "text": "Best practices for what is the pythagorean theorem?",
+        "type": "weak_semantic",
+        "latency_ms": 12.23
+      },
+      {
+        "text": "Explain DNS resolution",
+        "type": "hot",
+        "latency_ms": 9.58
+      },
+      {
+        "text": "What is the speed of light? - sehzpotbpnweyceprg",
+        "type": "unique",
+        "latency_ms": 11.81
+      },
+      {
+        "text": "I need information on natural language processing",
+        "type": "strong_semantic",
+        "latency_ms": 9.99
+      },
+      {
+        "text": "What is climate change?",
+        "type": "exact_repeat",
+        "latency_ms": 9.63
+      },
+      {
+        "text": "Best practices for what is the speed of light?",
+        "type": "weak_semantic",
+        "latency_ms": 10.1
+      },
+      {
+        "text": "What can you tell me about memory management work?",
+        "type": "strong_semantic",
+        "latency_ms": 10.14
+      },
+      {
+        "text": "What is the speed of light? - gpxkfzncbcqukbjz",
+        "type": "unique",
+        "latency_ms": 12.13
+      },
+      {
+        "text": "History of explain transaction isolation levels",
+        "type": "weak_semantic",
+        "latency_ms": 9.33
+      },
+      {
+        "text": "What is database normalization?",
+        "type": "exact_repeat",
+        "latency_ms": 9.2
+      },
+      {
+        "text": "Explain recurrent neural networks",
+        "type": "exact_repeat",
+        "latency_ms": 11.13
+      },
+      {
+        "text": "What is an operating system? - bwycmbttdmo",
+        "type": "unique",
+        "latency_ms": 13.44
+      },
+      {
+        "text": "Give me a summary of computer vision",
+        "type": "strong_semantic",
+        "latency_ms": 13.1
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 10.65
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 13.08
+      },
+      {
+        "text": "What is TCP/IP?",
+        "type": "exact_repeat",
+        "latency_ms": 13.09
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 13.7
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 10.4
+      },
+      {
+        "text": "What is reinforcement learning?",
+        "type": "exact_repeat",
+        "latency_ms": 9.18
+      },
+      {
+        "text": "Please describe convolutional neural network work",
+        "type": "strong_semantic",
+        "latency_ms": 10.0
+      },
+      {
+        "text": "Explain DNS resolution (as of 2021)",
+        "type": "dynamic_stale",
+        "latency_ms": 9.95
+      },
+      {
+        "text": "Explain DNS resolution - bqfxwbgr",
+        "type": "unique",
+        "latency_ms": 10.65
+      },
+      {
+        "text": "How does convolutional neural network work?",
+        "type": "exact_repeat",
+        "latency_ms": 10.04
+      },
+      {
+        "text": "Common issues with explain transaction isolation levels",
+        "type": "weak_semantic",
+        "latency_ms": 9.33
+      },
+      {
+        "text": "What is reinforcement learning? (as of 2023)",
+        "type": "dynamic_stale",
+        "latency_ms": 10.89
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 9.2
+      },
+      {
+        "text": "What is TCP/IP?",
+        "type": "exact_repeat",
+        "latency_ms": 10.35
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 10.96
+      },
+      {
+        "text": "Explain Big O notation",
+        "type": "exact_repeat",
+        "latency_ms": 11.72
+      },
+      {
+        "text": "What can you tell me about latency?",
+        "type": "strong_semantic",
+        "latency_ms": 15.14
+      },
+      {
+        "text": "Can you explain latency?",
+        "type": "strong_semantic",
+        "latency_ms": 14.56
+      },
+      {
+        "text": "What is reinforcement learning?",
+        "type": "exact_repeat",
+        "latency_ms": 13.61
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 14.21
+      },
+      {
+        "text": "What is VPN? - tncqvnfjeyxxpmcj",
+        "type": "unique",
+        "latency_ms": 16.61
+      },
+      {
+        "text": "Difference between what is virtual memory? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 14.43
+      },
+      {
+        "text": "hi",
+        "type": "cold",
+        "latency_ms": 11.44
+      },
+      {
+        "text": "got it",
+        "type": "cold",
+        "latency_ms": 12.39
+      },
+      {
+        "text": "What is HTTP?",
+        "type": "exact_repeat",
+        "latency_ms": 13.8
+      },
+      {
+        "text": "What is cdn?",
+        "type": "strong_semantic",
+        "latency_ms": 19.92
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 24.98
+      },
+      {
+        "text": "Please describe transaction isolation levels",
+        "type": "strong_semantic",
+        "latency_ms": 19.28
+      },
+      {
+        "text": "What is transfer learning?",
+        "type": "hot",
+        "latency_ms": 13.82
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 14.16
+      },
+      {
+        "text": "What is HTTP?",
+        "type": "exact_repeat",
+        "latency_ms": 13.35
+      },
+      {
+        "text": "How does convolutional neural network work?",
+        "type": "exact_repeat",
+        "latency_ms": 19.29
+      },
+      {
+        "text": "How does routing work? (as of 2021)",
+        "type": "dynamic_stale",
+        "latency_ms": 21.8
+      },
+      {
+        "text": "What can you tell me about serverless computing?",
+        "type": "strong_semantic",
+        "latency_ms": 12.63
+      },
+      {
+        "text": "Explain version control (as of 2022)",
+        "type": "dynamic_stale",
+        "latency_ms": 15.14
+      },
+      {
+        "text": "Give me a summary of backpropagation work",
+        "type": "strong_semantic",
+        "latency_ms": 10.58
+      },
+      {
+        "text": "Difference between what is http? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 10.03
+      },
+      {
+        "text": "What is TCP/IP? - dyomuuecllmsrzck",
+        "type": "unique",
+        "latency_ms": 11.64
+      },
+      {
+        "text": "What do you know about a system call?",
+        "type": "strong_semantic",
+        "latency_ms": 10.04
+      },
+      {
+        "text": "How does functional programming work?",
+        "type": "strong_semantic",
+        "latency_ms": 9.64
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "exact_repeat",
+        "latency_ms": 9.91
+      },
+      {
+        "text": "Explain serverless computing - gxbqvbidzelsocy",
+        "type": "unique",
+        "latency_ms": 10.6
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 9.38
+      },
+      {
+        "text": "Difference between how does routing work? and alternatives",
+        "type": "weak_semantic",
+        "latency_ms": 10.01
+      },
+      {
+        "text": "Best practices for what is multithreading?",
+        "type": "weak_semantic",
+        "latency_ms": 10.31
+      },
+      {
+        "text": "What do you know about interrupt handling?",
+        "type": "strong_semantic",
+        "latency_ms": 9.95
+      },
+      {
+        "text": "Give me a summary of version control",
+        "type": "strong_semantic",
+        "latency_ms": 9.6
+      },
+      {
+        "text": "ok",
+        "type": "cold",
+        "latency_ms": 7.79
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 10.1
+      },
+      {
+        "text": "What is a system call? - wgelkhgylwobzvzywemf",
+        "type": "unique",
+        "latency_ms": 11.59
+      },
+      {
+        "text": "What is database normalization?",
+        "type": "exact_repeat",
+        "latency_ms": 8.95
+      },
+      {
+        "text": "What is cloud storage? - zwasrngqclly",
+        "type": "unique",
+        "latency_ms": 10.5
+      },
+      {
+        "text": "What is the capital of France?",
+        "type": "exact_repeat",
+        "latency_ms": 9.59
+      },
+      {
+        "text": "What can you tell me about deadlock?",
+        "type": "strong_semantic",
+        "latency_ms": 9.97
+      },
+      {
+        "text": "good morning",
+        "type": "cold",
+        "latency_ms": 8.93
+      },
+      {
+        "text": "Best practices for explain load balancer in cloud",
+        "type": "weak_semantic",
+        "latency_ms": 9.57
+      },
+      {
+        "text": "How does the water cycle work? - bfgywwjev",
+        "type": "unique",
+        "latency_ms": 10.42
+      },
+      {
+        "text": "good morning",
+        "type": "cold",
+        "latency_ms": 8.28
+      },
+      {
+        "text": "What is a data structure? - eakyuhss",
+        "type": "unique",
+        "latency_ms": 10.02
+      },
+      {
+        "text": "How does gradient descent work?",
+        "type": "strong_semantic",
+        "latency_ms": 9.26
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 6.93
+      },
+      {
+        "text": "What is CDN?",
+        "type": "hot",
+        "latency_ms": 8.34
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "exact_repeat",
+        "latency_ms": 10.08
+      },
+      {
+        "text": "What is the capital of France?",
+        "type": "exact_repeat",
+        "latency_ms": 8.92
+      },
+      {
+        "text": "What is a relational database? - gpqkpnyfsgkrhitbl",
+        "type": "unique",
+        "latency_ms": 10.73
+      },
+      {
+        "text": "What is VPN? - wlfosfizqlndfipf",
+        "type": "unique",
+        "latency_ms": 10.44
+      },
+      {
+        "text": "Give me a summary of database replication",
+        "type": "strong_semantic",
+        "latency_ms": 8.8
+      },
+      {
+        "text": "What is vpn?",
+        "type": "strong_semantic",
+        "latency_ms": 8.62
+      },
+      {
+        "text": "What is climate change?",
+        "type": "exact_repeat",
+        "latency_ms": 8.5
+      },
+      {
+        "text": "Explain recurrent neural networks (as of 2023)",
+        "type": "dynamic_stale",
+        "latency_ms": 10.1
+      },
+      {
+        "text": "no",
+        "type": "cold",
+        "latency_ms": 7.11
+      },
+      {
+        "text": "How does backpropagation work?",
+        "type": "hot",
+        "latency_ms": 9.36
+      },
+      {
+        "text": "got it",
+        "type": "cold",
+        "latency_ms": 8.19
+      },
+      {
+        "text": "What is a firewall?",
+        "type": "hot",
+        "latency_ms": 8.88
+      },
+      {
+        "text": "How does packet switching work? - zunroycwgxtehfirw",
+        "type": "unique",
+        "latency_ms": 11.21
+      },
+      {
+        "text": "I need information on version control",
+        "type": "strong_semantic",
+        "latency_ms": 8.79
+      },
+      {
+        "text": "thanks",
+        "type": "cold",
+        "latency_ms": 7.19
+      },
+      {
+        "text": "Explain Big O notation",
+        "type": "exact_repeat",
+        "latency_ms": 8.68
+      },
+      {
+        "text": "Please describe a relational database",
+        "type": "strong_semantic",
+        "latency_ms": 9.52
+      },
+      {
+        "text": "Can you explain http?",
+        "type": "strong_semantic",
+        "latency_ms": 9.82
+      },
+      {
+        "text": "Common issues with explain interrupt handling",
+        "type": "weak_semantic",
+        "latency_ms": 10.54
+      },
+      {
+        "text": "What can you tell me about debugging?",
+        "type": "strong_semantic",
+        "latency_ms": 10.19
+      },
+      {
+        "text": "What is ACID compliance? - ajolbjyzbjrrjowz",
+        "type": "unique",
+        "latency_ms": 11.42
+      },
+      {
+        "text": "Explain recurrent neural networks",
+        "type": "exact_repeat",
+        "latency_ms": 9.09
+      },
+      {
+        "text": "How does acid compliance work?",
+        "type": "strong_semantic",
+        "latency_ms": 8.44
+      },
+      {
+        "text": "Can you explain a system call?",
+        "type": "strong_semantic",
+        "latency_ms": 8.7
+      },
+      {
+        "text": "Can you explain cap theorem?",
+        "type": "strong_semantic",
+        "latency_ms": 8.67
+      }
+    ],
+    "total_queries": 100,
+    "llm_calls": 0.0,
+    "cache_hits": 100.0,
+    "cache_misses": 0.0,
+    "exact_hits": 0.0,
+    "semantic_hits": 100.0,
+    "tool_hits": 0.0,
+    "context_hits": 0.0,
+    "total_latency_ms": 1109.4872951507568,
+    "latencies": [
+      12.229204177856445,
+      9.578227996826172,
+      11.809825897216797,
+      9.986639022827148,
+      9.630918502807617,
+      10.09821891784668,
+      10.14399528503418,
+      12.132406234741211,
+      9.334564208984375,
+      9.199857711791992,
+      11.131525039672852,
+      13.443470001220703,
+      13.097524642944336,
+      10.652542114257812,
+      13.083696365356445,
+      13.090133666992188,
+      13.702630996704102,
+      10.400772094726562,
+      9.17506217956543,
+      10.000228881835938,
+      9.952545166015625,
+      10.651350021362305,
+      10.037422180175781,
+      9.330034255981445,
+      10.89167594909668,
+      9.19651985168457,
+      10.350227355957031,
+      10.959148406982422,
+      11.723756790161133,
+      15.143632888793945,
+      14.564037322998047,
+      13.605594635009766,
+      14.212608337402344,
+      16.611099243164062,
+      14.427661895751953,
+      11.441707611083984,
+      12.391805648803711,
+      13.80300521850586,
+      19.917964935302734,
+      24.984121322631836,
+      19.281864166259766,
+      13.81683349609375,
+      14.155864715576172,
+      13.347387313842773,
+      19.291162490844727,
+      21.800994873046875,
+      12.629270553588867,
+      15.136241912841797,
+      10.584592819213867,
+      10.03122329711914,
+      11.639833450317383,
+      10.036468505859375,
+      9.640932083129883,
+      9.911060333251953,
+      10.59865951538086,
+      9.376764297485352,
+      10.014772415161133,
+      10.308027267456055,
+      9.953022003173828,
+      9.598731994628906,
+      7.78508186340332,
+      10.097265243530273,
+      11.591434478759766,
+      8.947372436523438,
+      10.49947738647461,
+      9.59467887878418,
+      9.971857070922852,
+      8.930206298828125,
+      9.574413299560547,
+      10.417461395263672,
+      8.27932357788086,
+      10.020971298217773,
+      9.264230728149414,
+      6.933450698852539,
+      8.344411849975586,
+      10.083198547363281,
+      8.919477462768555,
+      10.729789733886719,
+      10.44321060180664,
+      8.801698684692383,
+      8.619308471679688,
+      8.500099182128906,
+      10.102272033691406,
+      7.10606575012207,
+      9.35506820678711,
+      8.188724517822266,
+      8.875370025634766,
+      11.214494705200195,
+      8.793830871582031,
+      7.19141960144043,
+      8.675336837768555,
+      9.515523910522461,
+      9.819984436035156,
+      10.53762435913086,
+      10.185718536376953,
+      11.415481567382812,
+      9.093999862670898,
+      8.435726165771484,
+      8.695602416992188,
+      8.66556167602539
+    ],
+    "tokens_saved": 656.5000000000001,
+    "cost_saved": 0.013129999999999992,
+    "start_time": "2026-09-07T01:18:14.692347",
+    "cache_decisions": [],
+    "cache_efficiency": {
+      "total_entries": 63,
+      "unique_entries": 63,
+      "evictions": 0,
+      "expired_entries": 0,
+      "avg_hits_per_entry": 2.17
+    },
+    "end_time": "2026-09-07T01:18:15.803981",
+    "avg_latency_ms": 11.094872951507568,
+    "p50_latency_ms": 10.100245475769043,
+    "p95_latency_ms": 16.74463748931884,
+    "min_latency_ms": 6.933450698852539,
+    "max_latency_ms": 24.984121322631836,
+    "hit_rate": 1.0,
+    "runs": 1
+  },
+  "threshold_results": {
+    "thresholds": [
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "semantic_hit_rates": [
+      0.46,
+      0.44,
+      0.37,
+      0.31,
+      0.28
+    ],
+    "intelligent_hit_rates": [
+      0.37,
+      0.37,
+      0.37,
+      0.37,
+      0.37
+    ],
+    "semantic_avg_latencies": [
+      66.49328470230103,
+      67.90837526321411,
+      75.12652635574341,
+      81.33592128753662,
+      84.38577890396118
+    ],
+    "intelligent_avg_latencies": [
+      75.40826797485352,
+      75.18715381622314,
+      75.55912971496582,
+      75.18267393112183,
+      75.16951560974121
+    ],
+    "semantic_llm_calls": [
+      54,
+      56,
+      63,
+      69,
+      72
+    ],
+    "intelligent_llm_calls": [
+      63,
+      63,
+      63,
+      63,
+      63
+    ]
+  },
+  "capacity_results": {
+    "capacities": [
+      10,
+      25,
+      50,
+      100,
+      250
+    ],
+    "semantic_hit_rates": [
+      0.37,
+      0.37,
+      0.37,
+      0.37,
+      0.37
+    ],
+    "intelligent_hit_rates": [
+      0.37,
+      0.37,
+      0.37,
+      0.37,
+      0.37
+    ],
+    "semantic_entries": [
+      63,
+      63,
+      63,
+      63,
+      63
+    ],
+    "intelligent_entries": [
+      63,
+      63,
+      63,
+      63,
+      63
+    ],
+    "semantic_avg_hits": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "intelligent_avg_hits": [
+      1.61,
+      1.61,
+      1.61,
+      1.61,
+      1.61
+    ]
+  },
+  "ttl_results": {
+    "ttls": [
+      10,
+      30,
+      60,
+      300
+    ],
+    "semantic_hit_rates": [
+      0.37,
+      0.37,
+      0.37,
+      0.37
+    ],
+    "intelligent_hit_rates": [
+      0.37,
+      0.37,
+      0.37,
+      0.37
+    ],
+    "semantic_entries": [
+      63,
+      63,
+      63,
+      63
+    ],
+    "intelligent_entries": [
+      63,
+      63,
+      63,
+      63
+    ]
+  }
+}
