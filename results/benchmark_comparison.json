@@ -1,0 +1,36 @@
+{
+  "workload_size": 20,
+  "no_cache": {
+    "total_time_ms": 10231.596791999436,
+    "mean_latency_ms": 511.5744893998908,
+    "p50_latency_ms": 505.0293750000492,
+    "p95_latency_ms": 750.6047079996279,
+    "hit_rate_pct": 0.0,
+    "tokens_consumed": 1630,
+    "cost_usd": 0.04839999999999999
+  },
+  "exact_cache": {
+    "total_time_ms": 8345.404959000007,
+    "mean_latency_ms": 417.0985271501195,
+    "p50_latency_ms": 484.9787080001988,
+    "p95_latency_ms": 751.1770000000979,
+    "hit_rate_pct": 20.0,
+    "tokens_saved": 305,
+    "cost_saved_usd": 0.009,
+    "speedup": 1.2260156148522532,
+    "cost_reduction_pct": 18.595041322314053
+  },
+  "intelligent_semantic_cache": {
+    "total_time_ms": 5644.73283299958,
+    "mean_latency_ms": 282.121643849905,
+    "p50_latency_ms": 354.22650000055,
+    "p95_latency_ms": 752.8035409995937,
+    "hit_rate_pct": 45.0,
+    "exact_hits": 4,
+    "semantic_hits": 5,
+    "tokens_saved": 735,
+    "cost_saved_usd": 0.0218,
+    "speedup": 1.8125918612453484,
+    "cost_reduction_pct": 45.041322314049594
+  }
+}

@@ -64,7 +64,7 @@ class ToolCache(BaseCache):
                 return None
             payload = self._deserialize(raw)
             payload["_hit_count"] = int(payload.get("_hit_count", 0)) + 1
-            payload["_last_accessed"] = __import__("datetime").datetime.utcnow().isoformat()
+            payload["_last_accessed"] = __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()
             self.client.set(key, self._serialize(payload))
             return payload.get("value")
         except (redis.RedisError, json.JSONDecodeError) as exc:
@@ -85,7 +85,7 @@ class ToolCache(BaseCache):
                 "value": value,
                 "deterministic": deterministic,
                 "_hit_count": 0,
-                "_last_accessed": __import__("datetime").datetime.utcnow().isoformat(),
+                "_last_accessed": __import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat(),
             }
             ttl = ttl or self.default_ttl
             if ttl:

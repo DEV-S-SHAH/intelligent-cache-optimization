@@ -1,0 +1,24 @@
+{
+  "num_queries": 16,
+  "indexed_chunks": 51,
+  "without_cache": {
+    "total_time_ms": 6692.7,
+    "mean_latency_ms": 418.29,
+    "hit_rate_pct": 0.0
+  },
+  "exact_cache": {
+    "total_time_ms": 5515.28,
+    "mean_latency_ms": 344.47,
+    "hit_rate_pct": 18.75,
+    "exact_hits": 3,
+    "speedup": 1.21
+  },
+  "intelligent_semantic_cache": {
+    "total_time_ms": 4237.82,
+    "mean_latency_ms": 264.75,
+    "hit_rate_pct": 37.5,
+    "exact_hits": 3,
+    "semantic_hits": 3,
+    "speedup": 1.58
+  }
+}

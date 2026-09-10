@@ -215,7 +215,7 @@ def save_results(all_results: Dict[str, Dict[str, Any]], output_dir: str):
     os.makedirs(output_dir, exist_ok=True)
 
     json_path = os.path.join(output_dir, "benchmark_results.json")
-    with open(json_path, "w") as f:
+    with open(json_path, "w", encoding="utf-8") as f:
         json.dump(all_results, f, indent=2, default=str)
     print(f"JSON saved: {json_path}")
 
@@ -223,7 +223,7 @@ def save_results(all_results: Dict[str, Dict[str, Any]], output_dir: str):
     modes = ["no_cache", "exact_cache", "semantic_cache", "intelligent_multi_level"]
     mode_labels = ["No Cache", "Exact", "Semantic", "Intelligent"]
 
-    with open(csv_path, "w") as f:
+    with open(csv_path, "w", encoding="utf-8") as f:
         f.write("mode,avg_latency_ms,p50_latency_ms,p95_latency_ms,hit_rate,llm_calls,cache_hits,cache_misses,cost_saved,total_entries,avg_hits_per_entry\n")
         for mode, label in zip(modes, mode_labels):
             r = all_results.get(mode, {})
@@ -232,7 +232,8 @@ def save_results(all_results: Dict[str, Dict[str, Any]], output_dir: str):
     print(f"CSV saved: {csv_path}")
 
     md_path = os.path.join(output_dir, "benchmark_report.md")
-    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    from datetime import timezone
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
 
     md = f"""# Intelligent Cache Benchmark Report
 Generated: {now}
@@ -297,7 +298,7 @@ Generated: {now}
 - PostgreSQL 16 with pgvector (via Docker)
 - Mock LLM delay: {benchmark_delay_ms} ms (simulated)
 """.format(benchmark_delay_ms=benchmark_delay_ms)
-    with open(md_path, "w") as f:
+    with open(md_path, "w", encoding="utf-8") as f:
         f.write(md)
     print(f"Report saved: {md_path}")
 

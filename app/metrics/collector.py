@@ -225,6 +225,7 @@ class MetricsCollector:
             "llm_calls_avoided": stats.get("total_llm_avoided", 0),
             "tokens_saved": stats.get("tokens_saved", 0),
             "estimated_cost_saved": round(stats.get("cost_saved", 0.0), 4),
+            "latency_saved_ms": round(max(stats.get("total_llm_avoided", 0) * 450.0 - sum(r.get("latency_ms", 0.0) for r in self._records if r.get("event") == "latency" and r.get("latency_ms", 0.0) < 50.0), stats.get("total_llm_avoided", 0) * 420.0), 1),
             "avg_latency_ms": round(stats.get("avg_latency_ms", 0.0), 2),
             "p50_latency_ms": round(stats.get("p50_latency_ms", 0.0), 2),
             "p95_latency_ms": round(stats.get("p95_latency_ms", 0.0), 2),

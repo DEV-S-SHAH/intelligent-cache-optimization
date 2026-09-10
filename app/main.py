@@ -15,8 +15,14 @@ settings = get_settings()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    init_db()
-    logging.getLogger(__name__).info("Application started, database initialized")
+    try:
+        init_db()
+        logging.getLogger(__name__).info("Application started, database initialized")
+    except Exception as exc:
+        logging.getLogger(__name__).warning(
+            "Database initialization skipped (Postgres unavailable: %s). Operating in fallback mode.",
+            exc,
+        )
     yield
 
 

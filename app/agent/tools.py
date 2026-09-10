@@ -73,9 +73,6 @@ class AgentTools:
             elif isinstance(node, ast.Constant):
                 if not isinstance(node.value, (int, float)):
                     raise ValueError(f"Unsupported constant type: {type(node.value).__name__}")
-            elif isinstance(node, ast.Num):  # pragma: no cover - Python 3.7 compat
-                if not isinstance(node.n, (int, float)):
-                    raise ValueError("Unsupported number type")
             elif isinstance(node, ast.BinOp):
                 if type(node.op) not in allowed_operators:
                     raise ValueError(f"Unsupported operator: {type(node.op).__name__}")
@@ -98,8 +95,6 @@ class AgentTools:
                 return _eval(node.body)
             elif isinstance(node, ast.Constant):
                 return node.value
-            elif isinstance(node, ast.Num):
-                return node.n
             elif isinstance(node, ast.BinOp):
                 left = _eval(node.left)
                 right = _eval(node.right)

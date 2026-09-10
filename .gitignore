@@ -4,10 +4,10 @@ __pycache__/
 .venv/
 venv/
 .env
-.env.local
-data/
-results/
-dump.rdb
+# User data / dynamic files
+# data/
+# results/
+
 *.db
 *.sqlite
 *.sqlite3
@@ -24,3 +24,7 @@ htmlcov/
 .DS_Store
 node_modules/
 .changeset/
+*.egg-info/
+build/
+dist/
+.cache/

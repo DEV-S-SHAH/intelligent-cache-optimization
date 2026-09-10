@@ -373,7 +373,7 @@ def save_workload(queries: List[Dict[str, Any]], path: str) -> None:
     """Save workload to CSV."""
     import csv
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", newline="") as f:
+    with open(path, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=["id", "type", "text", "base", "complexity"])
         writer.writeheader()
         for q in queries:
