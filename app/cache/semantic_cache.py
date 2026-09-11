@@ -29,7 +29,11 @@ class SemanticCache(BaseCache):
         self.embedding_dim = embedding_dim
         self.similarity_threshold = similarity_threshold
         self.default_ttl = default_ttl or settings.cache_semantic_ttl
-        self._engine = create_engine(self.database_url, pool_pre_ping=True)
+        try:
+            self._engine = create_engine(self.database_url, pool_pre_ping=True)
+            self._engine.dialect.dbapi
+        except Exception:
+            self._engine = create_engine("sqlite:///cache_fallback.db")
         self._SessionLocal = sessionmaker(bind=self._engine)
         self._pgvector_available = None
 

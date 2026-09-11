@@ -1,13 +1,7 @@
 """Database session management."""
 
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, Session
-from app.config import get_settings
-
-settings = get_settings()
-
-engine = create_engine(settings.database_url, pool_pre_ping=True, echo=False)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+from sqlalchemy.orm import Session
+from app.database.models import engine, SessionLocal, Base
 
 
 def get_db() -> Session:
@@ -21,5 +15,5 @@ def get_db() -> Session:
 
 def init_db():
     """Initialize database tables."""
-    from app.database.models import Base
     Base.metadata.create_all(bind=engine)
+

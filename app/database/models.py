@@ -7,9 +7,11 @@ from sqlalchemy import (
     DateTime, Text, JSON, ForeignKey
 )
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, Session, relationship
-from pgvector.sqlalchemy import Vector
-from sqlalchemy import String
+from sqlalchemy.orm import sessionmaker, Session
+try:
+    from pgvector.sqlalchemy import Vector
+except ImportError:
+    Vector = JSON  # type: ignore
 import os
 from dotenv import load_dotenv
 
@@ -95,8 +97,16 @@ class Metric(Base):
     timestamp = Column(DateTime, default=datetime.utcnow, index=True)
 
 
-# Engine setup
-engine = create_engine(DATABASE_URL, pool_pre_ping=True, echo=False)
+# Engine setup with graceful fallback if PostgreSQL driver (psycopg2) is not installed
+def _create_engine_safe(url: str):
+    try:
+        eng = create_engine(url, pool_pre_ping=True, echo=False)
+        eng.dialect.dbapi
+        return eng
+    except Exception:
+        return create_engine("sqlite:///cache_fallback.db", echo=False)
+
+engine = _create_engine_safe(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 

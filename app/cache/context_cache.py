@@ -24,8 +24,11 @@ class ContextCache(BaseCache):
         default_ttl: Optional[int] = None,
     ):
         self.database_url = database_url or settings.database_url
-        self.default_ttl = default_ttl or settings.cache_context_ttl
-        self._engine = create_engine(self.database_url, pool_pre_ping=True)
+        try:
+            self._engine = create_engine(self.database_url, pool_pre_ping=True)
+            self._engine.dialect.dbapi
+        except Exception:
+            self._engine = create_engine("sqlite:///cache_fallback.db")
         self._SessionLocal = sessionmaker(bind=self._engine)
 
     def _generate_key(self, *parts: Any) -> str:

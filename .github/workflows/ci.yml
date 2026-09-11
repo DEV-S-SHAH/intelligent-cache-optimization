@@ -30,7 +30,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip build setuptools wheel
           python -m pip install -e .
-          python -m pip install pytest pytest-asyncio
+          python -m pip install pytest pytest-asyncio httpx fastapi sqlalchemy pydantic-settings redis python-dotenv
 
       - name: Run Test Suite
         run: |
@@ -60,8 +60,7 @@ jobs:
       - name: Verify Wheel Install in Clean Environment
         run: |
           python -m venv test_env
-          source test_env/bin/activate
-          pip install dist/*.whl
-          python -c "import intelligent_cache; print('Successfully imported intelligent-cache:', intelligent_cache.__version__)"
-          python -c "from intelligent_cache import IntelligentCache; cache = IntelligentCache(); cache.set('k', 'v'); assert cache.get('k').value == 'v'"
-          deactivate
+          ./test_env/bin/pip install --upgrade pip
+          ./test_env/bin/pip install $(find dist -name "*.whl" | head -n 1)
+          ./test_env/bin/python -c "import intelligent_cache; print('Successfully imported intelligent-cache:', intelligent_cache.__version__)"
+          ./test_env/bin/python -c "from intelligent_cache import IntelligentCache; cache = IntelligentCache(); cache.set('k', 'v'); assert cache.get('k').value == 'v'"
