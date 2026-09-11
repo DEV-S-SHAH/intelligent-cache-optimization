@@ -95,10 +95,11 @@ def test_memory_hierarchical_invalidation():
 
 
 def test_sqlite_hierarchical_invalidation():
-    with tempfile.NamedTemporaryFile(suffix=".db", delete=False) as tmp:
-        db_path = tmp.name
+    tmp = tempfile.NamedTemporaryFile(suffix=".db", delete=False)
+    db_path = tmp.name
+    tmp.close()
+    backend = SQLiteBackend(db_path=db_path)
     try:
-        backend = SQLiteBackend(db_path=db_path)
         backend.set("k1", CacheEntry(key="k1", query="q1", value="v1", namespace="user_10"))
         backend.set("k2", CacheEntry(key="k2", query="q2", value="v2", namespace="user_10:tools"))
         backend.set("k3", CacheEntry(key="k3", query="q3", value="v3", namespace="user_20"))
@@ -109,8 +110,12 @@ def test_sqlite_hierarchical_invalidation():
         assert backend.get("k2") is None
         assert backend.get("k3") is not None
     finally:
-        if os.path.exists(db_path):
-            os.unlink(db_path)
+        backend.close()
+        try:
+            if os.path.exists(db_path):
+                os.unlink(db_path)
+        except Exception:
+            pass
 
 
 def test_disk_hierarchical_invalidation():

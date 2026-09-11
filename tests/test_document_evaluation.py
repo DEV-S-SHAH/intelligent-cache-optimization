@@ -9,8 +9,11 @@ from intelligent_cache.evaluations import (
 )
 
 
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+
+
 def test_pdf_extraction():
-    pdf_path = Path("data/sample_policy.pdf")
+    pdf_path = DATA_DIR / "sample_policy.pdf"
     assert pdf_path.exists(), "Sample PDF must exist in data/"
 
     chunks = extract_text_from_file(pdf_path)
@@ -24,7 +27,7 @@ def test_pdf_extraction():
 
 
 def test_text_extraction():
-    txt_path = Path("data/expense_policy.txt")
+    txt_path = DATA_DIR / "expense_policy.txt"
     assert txt_path.exists(), "Expense policy text file must exist in data/"
 
     chunks = extract_text_from_file(txt_path)
@@ -34,7 +37,7 @@ def test_text_extraction():
 
 
 def test_document_qa_engine():
-    engine = DocumentQAEngine(data_dir="data")
+    engine = DocumentQAEngine(data_dir=str(DATA_DIR))
     assert len(engine.chunks) > 0
 
     # Query matching PDF
@@ -48,7 +51,7 @@ def test_document_qa_engine():
 
 
 def test_document_qa_caching():
-    engine = DocumentQAEngine(data_dir="data")
+    engine = DocumentQAEngine(data_dir=str(DATA_DIR))
     cache = IntelligentCache(similarity_threshold=0.55, namespace="doc_test")
 
     q1 = "What is the domestic daily meal allowance?"

@@ -67,8 +67,11 @@ def test_memory_backend_lfu_eviction():
 
 def test_sqlite_backend_persistence():
     db_path = ".cache/test_backend.db"
-    if os.path.exists(db_path):
-        os.remove(db_path)
+    try:
+        if os.path.exists(db_path):
+            os.remove(db_path)
+    except Exception:
+        pass
 
     try:
         backend1 = SQLiteBackend(db_path=db_path)
@@ -105,8 +108,11 @@ def test_sqlite_backend_persistence():
         assert backend2.get("k_sql") is None
         backend2.close()
     finally:
-        if os.path.exists(db_path):
-            os.remove(db_path)
+        try:
+            if os.path.exists(db_path):
+                os.remove(db_path)
+        except Exception:
+            pass
 
 
 def test_disk_backend_persistence():
