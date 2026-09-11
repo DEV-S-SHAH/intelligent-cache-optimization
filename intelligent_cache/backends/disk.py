@@ -14,8 +14,13 @@ from intelligent_cache.similarity.vector_ops import find_top_matches
 class DiskBackend(BaseStorageBackend):
     """Filesystem persistent cache storing JSON files per entry."""
 
-    def __init__(self, storage_dir: str = ".cache/intelligent_cache_storage"):
-        self.storage_dir = os.path.abspath(storage_dir)
+    def __init__(
+        self,
+        storage_dir: Optional[str] = None,
+        cache_dir: Optional[str] = None,
+    ):
+        target = storage_dir or cache_dir or ".cache/intelligent_cache_storage"
+        self.storage_dir = os.path.abspath(target)
         os.makedirs(self.storage_dir, exist_ok=True)
         self._lock = threading.RLock()
 
@@ -118,7 +123,7 @@ class DiskBackend(BaseStorageBackend):
             entries = self._read_all_entries()
             count = 0
             for e in entries:
-                if e.namespace == namespace:
+                if e.namespace == namespace or e.namespace.startswith(f"{namespace}:"):
                     path = self._get_path(e.key)
                     if os.path.isfile(path):
                         os.remove(path)

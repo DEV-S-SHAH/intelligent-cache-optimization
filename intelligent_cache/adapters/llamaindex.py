@@ -77,4 +77,66 @@ class IntelligentCacheLlamaIndex:
 
             llm.acomplete = cached_acomplete
 
+        if hasattr(llm, "chat"):
+            orig_chat = llm.chat
+
+            def cached_chat(messages: Any, *args: Any, **kwargs: Any) -> Any:
+                if isinstance(messages, (list, tuple)):
+                    prompt = "\n".join(
+                        f"{getattr(m, 'role', m.get('role', 'user') if isinstance(m, dict) else 'user')}: {getattr(m, 'content', m.get('content', str(m)) if isinstance(m, dict) else str(m))}"
+                        for m in messages
+                    )
+                else:
+                    prompt = str(messages)
+
+                hit = self.cache.get(
+                    query=prompt,
+                    namespace=self.namespace,
+                    threshold=self.similarity_threshold,
+                )
+                if hit is not None:
+                    return hit.value
+
+                res = orig_chat(messages, *args, **kwargs)
+                self.cache.set(
+                    query=prompt,
+                    value=res,
+                    ttl=self.ttl,
+                    namespace=self.namespace,
+                )
+                return res
+
+            llm.chat = cached_chat
+
+        if hasattr(llm, "achat"):
+            orig_achat = llm.achat
+
+            async def cached_achat(messages: Any, *args: Any, **kwargs: Any) -> Any:
+                if isinstance(messages, (list, tuple)):
+                    prompt = "\n".join(
+                        f"{getattr(m, 'role', m.get('role', 'user') if isinstance(m, dict) else 'user')}: {getattr(m, 'content', m.get('content', str(m)) if isinstance(m, dict) else str(m))}"
+                        for m in messages
+                    )
+                else:
+                    prompt = str(messages)
+
+                hit = await self.cache.aget(
+                    query=prompt,
+                    namespace=self.namespace,
+                    threshold=self.similarity_threshold,
+                )
+                if hit is not None:
+                    return hit.value
+
+                res = await orig_achat(messages, *args, **kwargs)
+                await self.cache.aset(
+                    query=prompt,
+                    value=res,
+                    ttl=self.ttl,
+                    namespace=self.namespace,
+                )
+                return res
+
+            llm.achat = cached_achat
+
         return llm

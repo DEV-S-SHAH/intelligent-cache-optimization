@@ -170,17 +170,22 @@ def test_redis_backend_with_mock():
 
 
 def test_postgres_backend_with_mock():
-    backend = PostgresBackend(database_url="postgresql://mock:5432/mockdb")
-    mock_engine = MagicMock()
-    backend._engine = mock_engine
+    import sys
+    from unittest.mock import MagicMock, patch
+    mock_sa = MagicMock()
+    mock_sa.text = lambda s: s
+    with patch.dict(sys.modules, {"sqlalchemy": mock_sa}):
+        backend = PostgresBackend(database_url="postgresql://mock:5432/mockdb")
+        mock_engine = MagicMock()
+        backend._engine = mock_engine
 
-    mock_conn = MagicMock()
-    mock_engine.connect.return_value.__enter__.return_value = mock_conn
+        mock_conn = MagicMock()
+        mock_engine.connect.return_value.__enter__.return_value = mock_conn
 
-    # Set
-    entry = CacheEntry(key="p_key", query="pg query", value="pg val")
-    mock_conn.execute.return_value.rowcount = 1
-    assert backend.set("p_key", entry) is True
+        # Set
+        entry = CacheEntry(key="p_key", query="pg query", value="pg val")
+        mock_conn.execute.return_value.rowcount = 1
+        assert backend.set("p_key", entry) is True
 
-    # Delete
-    assert backend.delete("p_key") is True
+        # Delete
+        assert backend.delete("p_key") is True

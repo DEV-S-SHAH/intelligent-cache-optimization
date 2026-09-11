@@ -10,10 +10,10 @@ Comparative benchmark across 3 configurations:
 
 | Metric | Without Cache | Traditional Exact Cache | Intelligent Semantic Cache |
 |---|---|---|---|
-| **Total Time** | `10.23s` | `8.35s` | `5.64s` |
-| **Mean Latency** | `511.6ms` | `417.1ms` | `282.1ms` |
-| **p50 Latency** | `505.0ms` | `485.0ms` | `354.2ms` |
-| **p95 Latency** | `750.6ms` | `751.2ms` | `752.8ms` |
+| **Total Time** | `10.24s` | `8.34s` | `5.64s` |
+| **Mean Latency** | `511.8ms` | `416.7ms` | `281.9ms` |
+| **p50 Latency** | `500.2ms` | `485.0ms` | `353.9ms` |
+| **p95 Latency** | `750.3ms` | `751.7ms` | `753.6ms` |
 | **Cache Hit Rate** | `0.0%` | `20.0%` | `**45.0%**` |
 | **Exact Hits** | `0` | `4` | `4` |
 | **Semantic Hits** | `0` | `0` | `5` |

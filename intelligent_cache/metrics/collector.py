@@ -139,6 +139,10 @@ class MetricsCollector:
                 per_namespace=dict(self._per_namespace),
             )
 
+    def summary(self) -> dict[str, Any]:
+        """Return metrics snapshot as a dictionary."""
+        return self.get_stats().to_dict()
+
     def to_prometheus(self) -> str:
         """Export metrics formatted for Prometheus scraper."""
         stats = self.get_stats()

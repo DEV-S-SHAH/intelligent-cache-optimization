@@ -91,7 +91,7 @@ st.sidebar.caption("Model-Agnostic Caching Optimization Layer")
 
 api_url_input = st.sidebar.text_input(
     "FastAPI Endpoint",
-    value="http://localhost:8000/api/v1",
+    value=os.getenv("API_URL", "http://localhost:8000/api/v1"),
     help="URL of running FastAPI server. If offline, dashboard operates in standalone mode.",
 )
 

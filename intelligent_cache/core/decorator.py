@@ -274,30 +274,59 @@ def cache_embeddings(
     def decorator(fn: Callable[..., Any]) -> Callable[..., Any]:
         c_inst = cache_instance or get_default_cache()
 
-        @functools.wraps(fn)
-        def wrapper(text: str, *args: Any, **kwargs: Any) -> Any:
-            emb_key = generate_embedding_key(text, model_name=model_name)
-            entry = c_inst.backend.get(emb_key)
-            if entry is not None:
-                c_inst.metrics.record_hit(hit_type=CacheHitType.EXACT, latency_ms=entry.latency_ms, namespace=namespace)
-                return entry.value
+        if asyncio.iscoroutinefunction(fn):
+            @functools.wraps(fn)
+            async def async_wrapper(text: str, *args: Any, **kwargs: Any) -> Any:
+                emb_key = generate_embedding_key(text, model_name=model_name)
+                entry = await asyncio.to_thread(c_inst.backend.get, emb_key)
+                if entry is not None:
+                    c_inst.metrics.record_hit(hit_type=CacheHitType.EXACT, latency_ms=entry.latency_ms, namespace=namespace)
+                    return entry.value
 
-            start = time.perf_counter()
-            result = fn(text, *args, **kwargs)
-            lat_ms = (time.perf_counter() - start) * 1000.0
+                start = time.perf_counter()
+                result = await fn(text, *args, **kwargs)
+                lat_ms = (time.perf_counter() - start) * 1000.0
 
-            from intelligent_cache.core.entry import CacheEntry
-            entry = CacheEntry(
-                key=emb_key,
-                query=text[:100],
-                value=result,
-                namespace=namespace,
-                tags=["embedding", model_name],
-                latency_ms=lat_ms,
-            )
-            c_inst.backend.set(emb_key, entry, ttl=ttl)
-            return result
+                from intelligent_cache.core.entry import CacheEntry
+                entry = CacheEntry(
+                    key=emb_key,
+                    query=text[:100],
+                    value=result,
+                    namespace=namespace,
+                    tags=["embedding", model_name],
+                    latency_ms=lat_ms,
+                )
+                await asyncio.to_thread(c_inst.backend.set, emb_key, entry, ttl)
+                return result
 
-        return wrapper
+            async_wrapper.cache_instance = c_inst
+            return async_wrapper
+        else:
+            @functools.wraps(fn)
+            def sync_wrapper(text: str, *args: Any, **kwargs: Any) -> Any:
+                emb_key = generate_embedding_key(text, model_name=model_name)
+                entry = c_inst.backend.get(emb_key)
+                if entry is not None:
+                    c_inst.metrics.record_hit(hit_type=CacheHitType.EXACT, latency_ms=entry.latency_ms, namespace=namespace)
+                    return entry.value
+
+                start = time.perf_counter()
+                result = fn(text, *args, **kwargs)
+                lat_ms = (time.perf_counter() - start) * 1000.0
+
+                from intelligent_cache.core.entry import CacheEntry
+                entry = CacheEntry(
+                    key=emb_key,
+                    query=text[:100],
+                    value=result,
+                    namespace=namespace,
+                    tags=["embedding", model_name],
+                    latency_ms=lat_ms,
+                )
+                c_inst.backend.set(emb_key, entry, ttl=ttl)
+                return result
+
+            sync_wrapper.cache_instance = c_inst
+            return sync_wrapper
 
     return decorator

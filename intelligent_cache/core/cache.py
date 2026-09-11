@@ -67,6 +67,10 @@ class IntelligentCache:
         )
         self.invalidator = InvalidationManager(self.backend, self.embedder)
 
+        # Thread-safe lock for internal state
+        import threading
+        self._lock = threading.RLock()
+
         # Track query frequency for policy scoring
         self._query_frequencies: dict[str, int] = {}
 
@@ -87,8 +91,9 @@ class IntelligentCache:
 
         # Update frequency tracker
         norm_q = query.strip().lower()
-        freq = self._query_frequencies.get(norm_q, 0) + 1
-        self._query_frequencies[norm_q] = freq
+        with self._lock:
+            freq = self._query_frequencies.get(norm_q, 0) + 1
+            self._query_frequencies[norm_q] = freq
 
         # 1. Exact Match
         if self.config.exact_match_enabled:
@@ -182,7 +187,8 @@ class IntelligentCache:
         # Apply intelligent caching policy
         if apply_policy and ttl is None:
             norm_q = query.strip().lower()
-            freq = self._query_frequencies.get(norm_q, 1)
+            with self._lock:
+                freq = self._query_frequencies.get(norm_q, 1)
             policy = self.scorer.compute_decision(
                 query=query,
                 response=value,
@@ -395,6 +401,10 @@ class IntelligentCache:
     def clear(self, namespace: Optional[str] = None) -> None:
         """Clear the cache entirely, or clear a specific namespace."""
         self.backend.clear(namespace=namespace)
+
+    async def aclear(self, namespace: Optional[str] = None) -> None:
+        """Asynchronously clear the cache entirely, or clear a specific namespace."""
+        await asyncio.to_thread(self.clear, namespace=namespace)
 
     def stats(self) -> CacheStats:
         """Return analytics and hit/miss statistics."""

@@ -17,13 +17,43 @@ def normalize_query(query: str) -> str:
 
 
 def _json_serializable(obj: Any) -> Any:
-    """Helper to convert arbitrary objects to JSON serializable structures."""
+    """Helper to convert arbitrary objects to JSON serializable structures deterministically."""
     if isinstance(obj, (str, int, float, bool, type(None))):
         return obj
+    if hasattr(obj, "item") and callable(obj.item):
+        try:
+            return obj.item()
+        except Exception:
+            pass
+    if hasattr(obj, "tolist") and callable(obj.tolist):
+        try:
+            return _json_serializable(obj.tolist())
+        except Exception:
+            pass
+    if hasattr(obj, "model_dump") and callable(obj.model_dump):
+        try:
+            return _json_serializable(obj.model_dump())
+        except Exception:
+            pass
+    if hasattr(obj, "dict") and callable(obj.dict):
+        try:
+            return _json_serializable(obj.dict())
+        except Exception:
+            pass
+    if hasattr(obj, "__dataclass_fields__"):
+        import dataclasses
+        try:
+            return _json_serializable(dataclasses.asdict(obj))
+        except Exception:
+            pass
+    if isinstance(obj, (set, frozenset)):
+        return sorted([_json_serializable(item) for item in obj], key=lambda x: str(x))
+    if isinstance(obj, (bytes, bytearray)):
+        return obj.hex()
     if isinstance(obj, (list, tuple)):
         return [_json_serializable(item) for item in obj]
     if isinstance(obj, dict):
-        return {str(k): _json_serializable(v) for k, v in sorted(obj.items())}
+        return {str(k): _json_serializable(v) for k, v in sorted(obj.items(), key=lambda item: str(item[0]))}
     if hasattr(obj, "__dict__"):
         return _json_serializable(vars(obj))
     return str(obj)

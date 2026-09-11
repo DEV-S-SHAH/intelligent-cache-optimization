@@ -34,6 +34,8 @@ def wrap_gemini(
 
         @functools.wraps(orig_gen)
         def sync_generate_content(*args: Any, **kwargs: Any) -> Any:
+            if kwargs.get("stream", False):
+                return orig_gen(*args, **kwargs)
             bypass = kwargs.pop("bypass_cache", False)
             query_str = str(args[0]) if args else str(kwargs.get("contents", ""))
 
@@ -78,6 +80,8 @@ def wrap_gemini(
 
         @functools.wraps(orig_gen_async)
         async def async_generate_content(*args: Any, **kwargs: Any) -> Any:
+            if kwargs.get("stream", False):
+                return await orig_gen_async(*args, **kwargs)
             bypass = kwargs.pop("bypass_cache", False)
             query_str = str(args[0]) if args else str(kwargs.get("contents", ""))
 

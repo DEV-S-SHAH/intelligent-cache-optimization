@@ -30,27 +30,51 @@ class AgentCache:
     ) -> Callable[[Callable[..., Any]], Callable[..., Any]]:
         """Decorator for caching an agent intermediate reasoning step."""
         def decorator(fn: Callable[..., Any]) -> Callable[..., Any]:
-            @functools.wraps(fn)
-            def wrapper(*args: Any, **kwargs: Any) -> Any:
-                query_key = f"{step_name}:{inputs}"
-                hit = self.cache.get(
-                    query=query_key,
-                    namespace=self.namespace,
-                    threshold=similarity_threshold,
-                )
-                if hit is not None:
-                    return hit.value
+            import asyncio
+            if asyncio.iscoroutinefunction(fn):
+                @functools.wraps(fn)
+                async def async_wrapper(*args: Any, **kwargs: Any) -> Any:
+                    query_key = f"{step_name}:{inputs}"
+                    hit = await self.cache.aget(
+                        query=query_key,
+                        namespace=self.namespace,
+                        threshold=similarity_threshold,
+                    )
+                    if hit is not None:
+                        return hit.value
 
-                res = fn(*args, **kwargs)
-                self.cache.set(
-                    query=query_key,
-                    value=res,
-                    ttl=ttl,
-                    namespace=self.namespace,
-                    tags=["step", step_name],
-                )
-                return res
-            return wrapper
+                    res = await fn(*args, **kwargs)
+                    await self.cache.aset(
+                        query=query_key,
+                        value=res,
+                        ttl=ttl,
+                        namespace=self.namespace,
+                        tags=["step", step_name],
+                    )
+                    return res
+                return async_wrapper
+            else:
+                @functools.wraps(fn)
+                def sync_wrapper(*args: Any, **kwargs: Any) -> Any:
+                    query_key = f"{step_name}:{inputs}"
+                    hit = self.cache.get(
+                        query=query_key,
+                        namespace=self.namespace,
+                        threshold=similarity_threshold,
+                    )
+                    if hit is not None:
+                        return hit.value
+
+                    res = fn(*args, **kwargs)
+                    self.cache.set(
+                        query=query_key,
+                        value=res,
+                        ttl=ttl,
+                        namespace=self.namespace,
+                        tags=["step", step_name],
+                    )
+                    return res
+                return sync_wrapper
         return decorator
 
     def cache_tool(

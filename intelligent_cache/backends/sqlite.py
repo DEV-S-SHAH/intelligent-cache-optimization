@@ -213,7 +213,8 @@ class SQLiteBackend(BaseStorageBackend):
         with self._lock:
             with self._conn:
                 cur = self._conn.execute(
-                    "DELETE FROM cache_entries WHERE namespace = ?", (namespace,)
+                    "DELETE FROM cache_entries WHERE namespace = ? OR namespace LIKE ?;",
+                    (namespace, f"{namespace}:%"),
                 )
                 return cur.rowcount
 

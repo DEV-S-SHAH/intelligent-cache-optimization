@@ -63,3 +63,30 @@ class IntelligentCacheLangChain(BaseCache):
     def clear(self, **kwargs: Any) -> None:
         """Clear cache."""
         self.cache.clear(namespace=self.namespace)
+
+    async def alookup(self, prompt: str, llm_string: str) -> Optional[Any]:
+        """Asynchronously look up value based on prompt and llm_string."""
+        ns = f"{self.namespace}:{llm_string}"
+        hit = await self.cache.aget(
+            query=prompt,
+            namespace=ns,
+            threshold=self.similarity_threshold,
+        )
+        if hit is not None:
+            return hit.value
+        return None
+
+    async def aupdate(self, prompt: str, llm_string: str, return_val: Any) -> None:
+        """Asynchronously update cache based on prompt and llm_string."""
+        ns = f"{self.namespace}:{llm_string}"
+        await self.cache.aset(
+            query=prompt,
+            value=return_val,
+            ttl=self.ttl,
+            namespace=ns,
+        )
+
+    async def aclear(self, **kwargs: Any) -> None:
+        """Asynchronously clear cache."""
+        await self.cache.aclear(namespace=self.namespace)
+

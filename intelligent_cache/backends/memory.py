@@ -198,10 +198,17 @@ class MemoryBackend(BaseStorageBackend):
 
     def invalidate_namespace(self, namespace: str) -> int:
         with self._lock:
-            keys = list(self._namespace_index.get(namespace, set()))
-            for k in keys:
-                self._remove_key(k)
-            return len(keys)
+            matching_ns = [
+                ns for ns in self._namespace_index
+                if ns == namespace or ns.startswith(f"{namespace}:")
+            ]
+            count = 0
+            for ns in matching_ns:
+                keys = list(self._namespace_index.get(ns, set()))
+                for k in keys:
+                    self._remove_key(k)
+                    count += 1
+            return count
 
     def invalidate_tag(self, tag: str) -> int:
         with self._lock:

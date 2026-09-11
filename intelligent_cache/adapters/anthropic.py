@@ -53,6 +53,8 @@ def wrap_anthropic(
     if is_async:
         @functools.wraps(original_create)
         async def async_messages_create(*args: Any, **kwargs: Any) -> Any:
+            if kwargs.get("stream", False):
+                return await original_create(*args, **kwargs)
             bypass = kwargs.pop("bypass_cache", False)
             query_str = _extract_prompt_from_anthropic_kwargs(kwargs)
             model_name = kwargs.get("model", "default")
@@ -90,6 +92,8 @@ def wrap_anthropic(
     else:
         @functools.wraps(original_create)
         def sync_messages_create(*args: Any, **kwargs: Any) -> Any:
+            if kwargs.get("stream", False):
+                return original_create(*args, **kwargs)
             bypass = kwargs.pop("bypass_cache", False)
             query_str = _extract_prompt_from_anthropic_kwargs(kwargs)
             model_name = kwargs.get("model", "default")

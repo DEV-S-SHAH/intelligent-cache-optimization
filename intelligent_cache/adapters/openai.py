@@ -54,6 +54,8 @@ def wrap_openai(
     if is_async:
         @functools.wraps(original_chat_create)
         async def async_chat_create(*args: Any, **kwargs: Any) -> Any:
+            if kwargs.get("stream", False):
+                return await original_chat_create(*args, **kwargs)
             bypass = kwargs.pop("bypass_cache", False)
             query_str = _extract_prompt_from_openai_kwargs(kwargs)
             model_name = kwargs.get("model", "default")
@@ -92,6 +94,8 @@ def wrap_openai(
     else:
         @functools.wraps(original_chat_create)
         def sync_chat_create(*args: Any, **kwargs: Any) -> Any:
+            if kwargs.get("stream", False):
+                return original_chat_create(*args, **kwargs)
             bypass = kwargs.pop("bypass_cache", False)
             query_str = _extract_prompt_from_openai_kwargs(kwargs)
             model_name = kwargs.get("model", "default")

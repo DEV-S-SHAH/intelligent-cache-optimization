@@ -205,8 +205,8 @@ class PostgresBackend(BaseStorageBackend):
                     conn.execute(text(f"DELETE FROM {self.table_name};"))
                 else:
                     conn.execute(
-                        text(f"DELETE FROM {self.table_name} WHERE namespace = :ns;"),
-                        {"ns": namespace},
+                        text(f"DELETE FROM {self.table_name} WHERE namespace = :ns OR namespace LIKE :ns_prefix;"),
+                        {"ns": namespace, "ns_prefix": f"{namespace}:%"},
                     )
                 conn.commit()
         except Exception as exc:
@@ -278,8 +278,8 @@ class PostgresBackend(BaseStorageBackend):
         try:
             with engine.connect() as conn:
                 res = conn.execute(
-                    text(f"DELETE FROM {self.table_name} WHERE namespace = :ns"),
-                    {"ns": namespace},
+                    text(f"DELETE FROM {self.table_name} WHERE namespace = :ns OR namespace LIKE :ns_prefix"),
+                    {"ns": namespace, "ns_prefix": f"{namespace}:%"},
                 )
                 conn.commit()
                 return res.rowcount
